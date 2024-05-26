@@ -4,5 +4,3 @@
 Servers/
 prjSemi/.settings/
 .metadata/
-prjSemi/src/main/webapp/WEB-INF/lib/mybatis-3.5.16.jar
-prjSemi/src/main/webapp/WEB-INF/lib/ojdbc11.jar
