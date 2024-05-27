@@ -7,3 +7,5 @@ prjSemi/.settings/
 .classpath
 prjSemi/src/main/webapp/WEB-INF/classes/
 prjSemi/src/main/webapp/WEB-INF/lib/
+*.gitignore
+*.project
