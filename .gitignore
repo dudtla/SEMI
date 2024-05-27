@@ -5,3 +5,4 @@ Servers/
 prjSemi/.settings/
 .metadata/
 .classpath
+prjSemi/src/main/webapp/WEB-INF/classes/
