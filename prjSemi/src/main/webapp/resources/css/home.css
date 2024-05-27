@@ -1,0 +1,51 @@
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*------title-------*/
+
+header{
+  width: 100%;
+  height: 30%;
+  background-color: #EFEFEF;
+}
+
+#log{
+  font-family: 'Thin Italic', sans-serif;
+  font-style: italic;
+  font-weight: 100; 
+  margin-left: 3%;
+}
+
+#slogan{
+  font-family: 'Bold Italic', sans-serif;
+  font-style: italic;
+  font-weight: 250; 
+}
+
+.title > #btn{
+  display: flex;
+  justify-content: end;
+}
+
+.title input[type="button"]{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.title > #ctg[type="button"]{
+  font-family: 'Extra Light', sans-serif;
+  font-weight: 200; 
+}
+
+.title input[type="button"]:hover{
+  background-color: #ffffff;
+}
+
+.title > #title_box{
+  margin-bottom: 3%;
+  margin-left: 3%;
+}

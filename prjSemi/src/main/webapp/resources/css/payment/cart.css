@@ -1,0 +1,262 @@
+.main_box{
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  color: #212121;
+}
+
+.box_1{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.box_2{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+/*---*/
+#info{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+
+}
+
+#info_1{
+  border-top: 5px solid #212121;
+  border-bottom: 1px solid #EFEFEF;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 20% 80% ;
+}
+
+#info_1 pre{
+  display: grid;
+  justify-items: center;
+
+  font-size: large;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+#info_2{
+  border-top: 5px solid #212121;
+  border-bottom: 1px solid #EFEFEF;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  font-size: large;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+#info_3{
+  border-top: 5px solid #212121;
+  border-bottom: 1px solid #EFEFEF;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  font-size: large;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+#info_4{
+  border-top: 5px solid #212121;
+  border-bottom: 1px solid #EFEFEF;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  font-size: large;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+/*---*/
+
+#result{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+#result_1{
+  border-bottom: 1px solid #212121;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 20% 80% ;
+}
+  #product{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+}
+
+#product_1 img{
+  width: 120px;
+  height: 120px;
+}
+#product_2 a{
+  padding-left:  10%;
+}
+
+#product_2 pre{
+  font-family: 'Bold Italic', sans-serif;
+  padding-left:  10%;
+}
+
+
+
+#result_2{
+  border-bottom: 1px solid #212121;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#result_3{
+  border-bottom: 1px solid #212121;
+  font-family: 'Bold Italic', sans-serif;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+
+#order_amount{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  margin-bottom: 20%;
+}
+#order_amount pre{
+  font-family: 'Bold Italic', sans-serif;
+}
+#order_amount [type="submit"]{
+  background-color: #212121;
+  color: #EFEFEF;
+}
+
+#result_4{
+  border-bottom: 1px solid #212121;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#result_4 pre{
+  font-family: 'Bold Italic', sans-serif;
+}
+
+/*---*/
+
+
+.box_3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.box_3 [type="button"]{
+  font-family: 'Bold Italic', sans-serif;
+  background-color: #EFEFEF;
+  color: #212121;
+  outline: none;
+  border: none;
+}
+#coment{
+  display: grid;
+  justify-content: right;
+}
+
+/*---*/
+.box_4{
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+
+  border-top: 5px solid #212121;
+  border-bottom: 1px solid #212121;
+}
+#order, #total{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#total{
+  
+}
+
+#order{
+  /* margin: 3%; */
+  font-size: large;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+#total{
+  border-top: 1px solid #EFEFEF;
+}
+
+/*---*/
+
+#img_1{
+  width: 20px;
+  height: 20px;
+}
+#img_2{
+  width: 28px;
+  height: 28px;
+}
+
+/*---*/
+.box_5{
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+
+  
+}
+
+.box_5 input[type="button"],.box_5 input[type="submit"]{
+  width: 230px;
+  height: 80px;
+  margin: 3%;
+
+  outline: none;
+  border: none;
+  font-family: 'Bold Italic', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: center;
+}
+
+.box_5 input[type="button"]{
+  background-color: #EFEFEF;
+}
+
+.box_5 input[type="submit"]{
+  background-color: #212121;
+  color: #EFEFEF;
+}
+
+.box_5 input[type="button"]:hover{
+  background-color: #212121;
+  color: #EFEFEF;
+}
+
+.box_5 input[type="submit"]:hover{
+  background-color: #EFEFEF;
+  color: #212121;
+}
