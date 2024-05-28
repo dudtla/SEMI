@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_HOME</title>
-  <link  rel="stylesheet" href="/prjSemi/resources/css/home.css">
+ <%@ include file="/WEB-INF/views/layout/util.jsp" %>
 
 </head>
 <body>
