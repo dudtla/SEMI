@@ -119,15 +119,6 @@ public class MemberService {
 		return result == 0;
 	}
 
-	// 회원 목록 조회 (관리자전용)
-	
-	public List<MemberVo> getMemberList(MemberVo vo) throws Exception {
-		SqlSession ss = getSqlSession();
-		List<MemberVo> voList = dao.getMemberList(ss,vo);
-		ss.close();
-		return voList;
-	}
 
-	// 회원 검색 (아이디||닉네임 검색) (관리자 전용)
 
 }
