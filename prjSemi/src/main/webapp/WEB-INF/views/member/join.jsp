@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>회원가입</title>
-<%@ include file="/WEB-INF/views/layout/util.jsp" %>
+ <link rel="stylesheet" href="/app/resources/css/member/join.css">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 	<main>
 
 
-		<form action="/prjSemi/member/join" method="post"
+		<form action="/app/member/join" method="post"
 			enctype="multipart/form-data" class="form-join">
 			<h1>회원가입</h1>
 			<input type="text" name="id" placeholder="아이디">
