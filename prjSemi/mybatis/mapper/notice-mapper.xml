@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NoticeMapper">
+
+	<insert id="write">
+		INSERT INTO MEMBER_NOTI
+		(NO, ADMIN_NO, TITLE, CONTENT) 
+		VALUES (SEQ_MEMBER_NOTI_NO.NEXTVAL , #{adminNo} , #{title}, #{content})
+	</insert>
+	
+	<select id="getNoticeList" resultType="com.kh.app.notice.vo.NoticeVo">
+		SELECT NO, TITLE, ENROLL_DATE 
+		FROM MEMBER_NOTI ORDER BY NO DESC
+	</select>
+	
+	<select id="getNoticeDetail" resultType="com.kh.app.notice.vo.NoticeVo">
+		SELECT NO, ADMIN_NO, TITLE ,CONTENT, ENROLL_DATE  
+		FROM MEMBER_NOTI WHERE NO = #{no};
+	</select>
+	
+
+</mapper>
