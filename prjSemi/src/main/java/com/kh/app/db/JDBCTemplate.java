@@ -1,12 +1,25 @@
 package com.kh.app.db;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
 public class JDBCTemplate {
+	
+	public static void getSqlSession() throws Exception {
+		String resource = "org/mybatis/example/mybatis-config.xml";
+		InputStream inputStream = Resources.getResourceAsStream(resource);
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+	}
+	
 
 	public static Connection getConnection() throws Exception {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
