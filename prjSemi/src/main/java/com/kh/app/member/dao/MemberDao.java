@@ -36,9 +36,6 @@ public class MemberDao {
 		return ss.selectOne("MemberMapper.checkIdDup", id);
 	}
 
-	//회원 목록 조회 (관리자전용)
-	public List<MemberVo> getMemberList(SqlSession ss, MemberVo vo) {
-		return ss.selectList("MemberMapper.getMemberList", vo);
-	}
+
 
 }//
