@@ -54,8 +54,8 @@
 
 
 	<main>
-		<form action="/prjSemi/member/login" method="post"
-			enctype="multipart/form-data" class="form-login">
+		<form action="/app/member/login" method="post"
+			 class="form-login">
 			<div>
 				<h2>로그인</h2>
 			</div>
@@ -63,7 +63,7 @@
 			<input type="password" name="pwd" placeholder="비밀번호"> 
 				<br> <input type="submit" value="로그인하기">
 
-			<button type="button" onclick="location.href = '/prjSemi/member/join'">회원가입</button>
+			<button type="button" onclick="location.href = '/app/member/join'">회원가입</button>
 
 		</form>
 		
