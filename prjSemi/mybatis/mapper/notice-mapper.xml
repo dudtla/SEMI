@@ -17,7 +17,7 @@
 	
 	<select id="getNoticeDetail" resultType="com.kh.app.notice.vo.NoticeVo">
 		SELECT NO, ADMIN_NO, TITLE ,CONTENT, ENROLL_DATE  
-		FROM MEMBER_NOTI WHERE NO = #{no};
+		FROM MEMBER_NOTI WHERE NO = #{no}
 	</select>
 	
 

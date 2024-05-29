@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardQnaMapper">
+
+	<insert id="insertQna">
+		INSERT INTO MEMBER_QNA 
+		(QNA_NO, MEMBER_NO , TITLE, CONTENT) 
+		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, 'TEST1', 'TEST1')
+	</insert>
+	
+	<select id="getQnaList">
+		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK
+		FROM MEMBER_QNA Q
+		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
+		WHERE Q.DELETE_YN = 'N'
+	</select>
+	
+	<select id="getQnaDeatil">
+		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK
+		FROM MEMBER_QNA Q
+		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
+		AND Q.QNA_NO = 3
+	</select>
+	
+	<update id="qnaAnswer">
+		UPDATE MEMBER_QNA
+		SET ANSWER ='배송이 시작되었습니다'
+		WHERE QNA_NO = 1
+	</update>
+	
+	<update id="qnaDelete">
+		UPDATE MEMBER_QNA
+		SET DELETE_YN = 'Y'
+		WHERE QNA_NO = 1
+	</update>
+	
+
+</mapper>
