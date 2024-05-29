@@ -1,51 +1,55 @@
-body{
+
+/*------main--------*/
+
+main{
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
-/*------title-------*/
-
-header{
-  width: 100%;
-  height: 30%;
-  background-color: #EFEFEF;
-}
-
-#log{
-  font-family: 'Thin Italic', sans-serif;
-  font-style: italic;
-  font-weight: 100; 
-  margin-left: 3%;
-}
-
-#slogan{
-  font-family: 'Bold Italic', sans-serif;
-  font-style: italic;
-  font-weight: 250; 
-}
-
-.title > #btn{
+#img{
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin: 5%;
 }
 
-.title input[type="button"]{
-  background-color: transparent;
-  border: none;
-  outline: none;
+/*--------main-(slides)----------*/
+
+.slide{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
-.title > #ctg[type="button"]{
-  font-family: 'Extra Light', sans-serif;
-  font-weight: 200; 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.title input[type="button"]:hover{
-  background-color: #ffffff;
+.slide-contain,
+.slide-contain2,
+.slide-contain3 {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
 }
 
-.title > #title_box{
-  margin-bottom: 3%;
-  margin-left: 3%;
+.myslide, .myslide2, .myslide3 {
+  position: relative;
+  width: 350px; /* 고정된 너비 */
+  height: 400px; /* 고정된 높이 */
+  overflow: hidden;
 }
+
+.myslide img, .myslide2 img, .myslide3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
