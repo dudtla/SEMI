@@ -92,6 +92,5 @@
  
  <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
 
-<script src="./home.js"></script>
 </body>
 </html>
