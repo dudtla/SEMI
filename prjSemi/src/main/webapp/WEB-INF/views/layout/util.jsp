@@ -1,9 +1,9 @@
 
-<link rel="stylesheet" href="/app/resources/css/home.css">
-<link rel="stylesheet" href="/app/resources/js/home.js">
-<link rel="stylesheet" href="/app//css/headerFooter.css">
-<link rel="stylesheet" href="/app/resources/css/productQna.css">
-<link rel="stylesheet" href="/app/resources/css/productQna.css">
+<link rel="stylesheet" href="/app/resources/css/util/home.css">
+<link rel="stylesheet" href="/app/resources/css/util/headerFooter.css">
+<script src="/app/resources/js/home.js"></script>
+
+
 
 
 <script>
