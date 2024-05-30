@@ -24,6 +24,7 @@
 	<mappers>
 		<mapper resource="/mapper/board-mapper.xml" />
 		<mapper resource="/mapper/member-mapper.xml" />
+		<mapper resource="/mapper/cart-mapper.xml" />
 		<mapper resource="/mapper/notice-mapper.xml" />
 		<mapper resource="/mapper/board-qna-mapper.xml" />
 	</mappers>
