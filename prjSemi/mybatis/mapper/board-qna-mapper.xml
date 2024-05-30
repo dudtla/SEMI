@@ -7,7 +7,7 @@
 	<insert id="insertQna">
 		INSERT INTO MEMBER_QNA 
 		(QNA_NO, MEMBER_NO , TITLE, CONTENT) 
-		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, 'TEST1', 'TEST1')
+		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, #{title}, #{content})
 	</insert>
 	
 	<select id="getQnaList">
@@ -21,7 +21,7 @@
 		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK
 		FROM MEMBER_QNA Q
 		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
-		AND Q.QNA_NO = 3
+		AND Q.QNA_NO = #{memberNo}
 	</select>
 	
 	<update id="qnaAnswer">
@@ -33,7 +33,7 @@
 	<update id="qnaDelete">
 		UPDATE MEMBER_QNA
 		SET DELETE_YN = 'Y'
-		WHERE QNA_NO = 1
+		WHERE MEMBER_NO = #{memberNo}
 	</update>
 	
 

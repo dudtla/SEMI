@@ -12,21 +12,26 @@ import javax.servlet.http.HttpServletResponse;
 import com.kh.app.board.qna.service.BoardQnaService;
 import com.kh.app.board.qna.vo.BoardQnaVo;
 
-@WebServlet("qna/detail")
+@WebServlet("/qna/detail")
 public class BoardQnaDetailController extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//data
-		String no = req.getParameter("no");
-		
-		//service
-		BoardQnaService service = new BoardQnaService();
-		BoardQnaVo vo = service.getQnaDetail();
-		
-		//결과
-		PrintWriter out = resp.getWriter();
-		out.write("qnaVo :" + vo);
+		try {
+			//data
+			String qnaNo = req.getParameter("no");
+			
+			//service
+			BoardQnaService service = new BoardQnaService();
+			BoardQnaVo vo = service.getQnaDetail(qnaNo);
+			
+			//결과
+			PrintWriter out = resp.getWriter();
+			out.write("qnaVo :" + vo);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
