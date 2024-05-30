@@ -26,7 +26,7 @@ public class BoardQnaListController extends HttpServlet {
 			List<BoardQnaVo> voList = service.getQnaList();
 			
 			req.setAttribute("voList", voList);
-			req.getRequestDispatcher("").forward(req, resp);			
+			req.getRequestDispatcher("/WEB-INF/views/qnaBoard/list.jsp").forward(req, resp);			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

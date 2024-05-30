@@ -1,5 +1,7 @@
 package com.kh.app.board.qna.service;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import com.kh.app.board.qna.dao.BoardQnaDao;
@@ -15,6 +17,8 @@ public class BoardQnaService {
 		this.dao = new BoardQnaDao();
 	}
 	
+	
+	//qna작성
 	public int insert(BoardQnaVo vo) throws Exception {
 		//비즈니스
 		if(vo.getTitle().contains("18")) {
@@ -37,5 +41,41 @@ public class BoardQnaService {
 		ss.close();
 		return result;
 	}
+
+	
+	//qna삭제
+	public int delete(BoardQnaVo vo) throws Exception {
+		SqlSession ss = SqlSessionTemplate.getSqlSession();
+		int result = dao.delete(ss, vo);
+		
+		if(result == 1) {
+			ss.commit();
+		}else {
+			ss.rollback();
+		}
+		ss.close();
+		
+		return result;
+		
+	}
+
+	//qna목록 조회
+	public List<BoardQnaVo> getQnaList() throws Exception {
+		SqlSession ss = SqlSessionTemplate.getSqlSession();
+		List<BoardQnaVo> voList = dao.getQnaList(ss);
+		ss.close();
+		return voList;
+	}
+
+
+	//qna상세조회
+	public BoardQnaVo getQnaDetail(String qnaNo) throws Exception {
+		SqlSession ss = SqlSessionTemplate.getSqlSession();
+		BoardQnaVo vo = dao.getQnaDetail(ss, qnaNo);
+		ss.close();
+		return vo;
+	}
+
+
 
 }
