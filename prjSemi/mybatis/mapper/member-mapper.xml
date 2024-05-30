@@ -30,18 +30,17 @@
 
 	<select id="login" resultType="com.kh.app.member.vo.MemberVo">
 		SELECT
-		MEMBER_ID
-		, PWD
-		, NICK
-		, ADDRESS
-		, PHONE
-		, DELETE_YN
-		, LEVEL
+			MEMBER_ID
+			, PWD
+			, NICK
+			, ADDRESS
+			, PHONE
+			, DELETE_YN
+			, "LEVEL"
 		FROM MEMBER
 		WHERE MEMBER_ID = #{memberId}
 		AND PWD = #{pwd}
-		AND DELETE_YN
-		= 'N'
+		AND DELETE_YN = 'N'
 	</select>
 
 	<update id="edit">
