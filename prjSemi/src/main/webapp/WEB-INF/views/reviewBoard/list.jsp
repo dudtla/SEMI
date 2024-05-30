@@ -11,7 +11,7 @@
 <body>
 
 	<main>
-		<h1 align="center">QnA목록 조회</h1>
+		<h1 align="center">리뷰 목록 조회</h1>
 
 		<table>
 			<thead>
@@ -25,7 +25,7 @@
 			<tbody>
 			<c:forEach items="${voList}" var="vo">
 				<tr>
-					<td>${vo.qnaNo}</td>
+					<td>${vo.reviewNo}</td>
 					<td>${vo.title}</td>
 					<td>${vo.enrollDate}</td>
 					<td>${vo.writerNick}</td>

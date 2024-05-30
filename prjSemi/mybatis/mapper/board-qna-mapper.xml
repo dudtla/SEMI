@@ -10,30 +10,34 @@
 		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, #{title}, #{content})
 	</insert>
 	
-	<select id="getQnaList">
-		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK
+	<select id="getQnaList" resultType="com.kh.app.board.qna.vo.BoardQnaVo">
+		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK AS WRITER_NICK
 		FROM MEMBER_QNA Q
 		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
 		WHERE Q.DELETE_YN = 'N'
+		ORDER BY
+		Q.ENROLL_DATE DESC
 	</select>
 	
-	<select id="getQnaDeatil">
-		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK
+	<select id="getQnaDeatil" resultType="com.kh.app.board.qna.vo.BoardQnaVo">
+		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK AS WRITER_NICK
 		FROM MEMBER_QNA Q
 		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
-		AND Q.QNA_NO = #{memberNo}
+		WHERE Q.QNA_NO = #{no}
+		AND Q.DELETE_YN = 'N'
 	</select>
 	
 	<update id="qnaAnswer">
 		UPDATE MEMBER_QNA
-		SET ANSWER ='배송이 시작되었습니다'
+		SET ANSWER = #{answer}
 		WHERE QNA_NO = 1
 	</update>
 	
-	<update id="qnaDelete">
+	<update id="qnaDelete" >
 		UPDATE MEMBER_QNA
 		SET DELETE_YN = 'Y'
-		WHERE MEMBER_NO = #{memberNo}
+		WHERE QNA_NO = #{qnaNo}
+		AND MEMBER_NO = #{memberNo}
 	</update>
 	
 

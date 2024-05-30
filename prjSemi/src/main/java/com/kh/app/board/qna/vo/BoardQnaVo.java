@@ -14,12 +14,14 @@ public class BoardQnaVo {
 	private String deleteYn;
 	private String answerYn;
 	private String openYn;
+	private String writerNick;
 	public BoardQnaVo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public BoardQnaVo(String qnaNo, String memberNo, String sellerNo, String productNo, String title, String content,
-			String answer, String enrollDate, String modifyDate, String deleteYn, String answerYn, String openYn) {
+			String answer, String enrollDate, String modifyDate, String deleteYn, String answerYn, String openYn,
+			String writerNick) {
 		super();
 		this.qnaNo = qnaNo;
 		this.memberNo = memberNo;
@@ -33,13 +35,14 @@ public class BoardQnaVo {
 		this.deleteYn = deleteYn;
 		this.answerYn = answerYn;
 		this.openYn = openYn;
+		this.writerNick = writerNick;
 	}
 	@Override
 	public String toString() {
 		return "BoardQnaVo [qnaNo=" + qnaNo + ", memberNo=" + memberNo + ", sellerNo=" + sellerNo + ", productNo="
 				+ productNo + ", title=" + title + ", content=" + content + ", answer=" + answer + ", enrollDate="
 				+ enrollDate + ", modifyDate=" + modifyDate + ", deleteYn=" + deleteYn + ", answerYn=" + answerYn
-				+ ", openYn=" + openYn + "]";
+				+ ", openYn=" + openYn + ", writerNick=" + writerNick + "]";
 	}
 	public String getQnaNo() {
 		return qnaNo;
@@ -113,7 +116,12 @@ public class BoardQnaVo {
 	public void setOpenYn(String openYn) {
 		this.openYn = openYn;
 	}
-	
+	public String getWriterNick() {
+		return writerNick;
+	}
+	public void setWriterNick(String writerNick) {
+		this.writerNick = writerNick;
+	}
 	
 	
 	

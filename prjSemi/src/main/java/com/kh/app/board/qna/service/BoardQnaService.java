@@ -8,6 +8,7 @@ import com.kh.app.board.qna.dao.BoardQnaDao;
 import com.kh.app.board.qna.vo.BoardQnaVo;
 import com.kh.app.db.SqlSessionTemplate;
 import com.kh.app.notice.dao.NoticeDao;
+import com.kh.app.review.vo.ReviewVo;
 
 public class BoardQnaService {
 	
@@ -20,14 +21,7 @@ public class BoardQnaService {
 	
 	//qna작성
 	public int insert(BoardQnaVo vo) throws Exception {
-		//비즈니스
-		if(vo.getTitle().contains("18")) {
-			throw new Exception("욕하지마세요-제목");
-		}
-		
-		if(vo.getContent().contains("18")) {
-			throw new Exception("욕하지마세요-내용");
-		}
+
 		
 		//dao
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
@@ -59,6 +53,16 @@ public class BoardQnaService {
 		
 	}
 
+
+	
+	//qna상세 조회
+	public BoardQnaVo getQnaDetail(String no) throws Exception {
+		SqlSession ss = SqlSessionTemplate.getSqlSession();
+		BoardQnaVo vo = dao.getQnaDetail(ss, no);
+		ss.close();
+		return vo;
+	}
+
 	//qna목록 조회
 	public List<BoardQnaVo> getQnaList() throws Exception {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
@@ -68,14 +72,27 @@ public class BoardQnaService {
 	}
 
 
-	//qna상세조회
-	public BoardQnaVo getQnaDetail(String qnaNo) throws Exception {
+	public int insertAnswer(BoardQnaVo vo) throws Exception {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
-		BoardQnaVo vo = dao.getQnaDetail(ss, qnaNo);
+		int result = dao.insertAnswer(ss, vo);
+		if (result == 1) {
+			ss.commit();
+		}else {
+			ss.rollback();
+		}
 		ss.close();
-		return vo;
+		return result;
+	}
+
+
+	
+	
+		
+		
 	}
 
 
 
-}
+
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardReviewMapper">
+
+	<insert id="insertReview">
+		INSERT INTO MEMBER_REVIEW(
+		    REVIEW_NO    
+		   , MEMBER_NO                     
+		   , TITLE          
+		   , CONTENT        
+		)VALUES(
+	    SEQ_REVIEW_NO.NEXTVAL
+		    , #{memberNo}
+		    , #{title}
+		    , #{content}
+		)   
+	</insert>
+	
+	<select id="getReviewList" resultType="com.kh.app.review.vo.ReviewVo" >
+		SELECT R.REVIEW_NO, R.TITLE, R.CONTENT, R.ENROLL_DATE, M.NICK AS WRITER_NICK
+		FROM MEMBER_REVIEW R
+		JOIN MEMBER M ON R.MEMBER_NO = M.MEMBER_NO
+		ORDER BY R.ENROLL_DATE
+		
+	</select>
+	
+	<select id="getReviewDeatil" resultType="com.kh.app.review.vo.ReviewVo" >
+		SELECT R.REVIEW_NO, R.TITLE, R.CONTENT, R.ENROLL_DATE, M.NICK AS WRITER_NICK
+		FROM MEMBER_REVIEW R
+		JOIN MEMBER M ON R.MEMBER_NO = M.MEMBER_NO
+		WHERE R.REVIEW_NO = #{reviewNo}
+	</select>
+	
+	<update id="reviewAnswer"></update>
+
+</mapper>
