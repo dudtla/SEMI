@@ -19,7 +19,7 @@ private final CartDao dao;
 	}
 	
 	//장바구니 넣기 메소드
-	public int write(CartVo vo) throws Exception {
+	public int cartInput(CartVo vo) throws Exception {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
 		int result = dao.write(ss, vo);
 		if(result == 1) {
@@ -32,7 +32,7 @@ private final CartDao dao;
 	}
 	
 	//장바구니 조회 메소드
-	public List<CartVo> getNoticeList() throws Exception{
+	public List<CartVo> getCartList() throws Exception{
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
 		List<CartVo> voList = dao.getCartList(ss);
 		ss.close();
