@@ -19,11 +19,11 @@ public class BoardQnaDetailController extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			//data
-			String qnaNo = req.getParameter("no");
+			String no = req.getParameter("no");
 			
 			//service
 			BoardQnaService service = new BoardQnaService();
-			BoardQnaVo vo = service.getQnaDetail(qnaNo);
+			BoardQnaVo vo = service.getQnaDetail(no);
 			
 			//결과
 			PrintWriter out = resp.getWriter();

@@ -11,12 +11,13 @@ public class ReviewVo {
 	private String enrollDate;
 	private String modifyDate;
 	private String scope;
+	private String writerNick;
 	public ReviewVo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public ReviewVo(String reviewNo, String memberNo, String productNo, String title, String content,
-			String productName, String enrollDate, String modifyDate, String scope) {
+			String productName, String enrollDate, String modifyDate, String scope, String writerNick) {
 		super();
 		this.reviewNo = reviewNo;
 		this.memberNo = memberNo;
@@ -27,12 +28,13 @@ public class ReviewVo {
 		this.enrollDate = enrollDate;
 		this.modifyDate = modifyDate;
 		this.scope = scope;
+		this.writerNick = writerNick;
 	}
 	@Override
 	public String toString() {
 		return "ReviewVo [reviewNo=" + reviewNo + ", memberNo=" + memberNo + ", productNo=" + productNo + ", title="
 				+ title + ", content=" + content + ", productName=" + productName + ", enrollDate=" + enrollDate
-				+ ", modifyDate=" + modifyDate + ", scope=" + scope + "]";
+				+ ", modifyDate=" + modifyDate + ", scope=" + scope + ", writerNick=" + writerNick + "]";
 	}
 	public String getReviewNo() {
 		return reviewNo;
@@ -88,7 +90,12 @@ public class ReviewVo {
 	public void setScope(String scope) {
 		this.scope = scope;
 	}
-
+	public String getWriterNick() {
+		return writerNick;
+	}
+	public void setWriterNick(String writerNick) {
+		this.writerNick = writerNick;
+	}
 	
 	
 }

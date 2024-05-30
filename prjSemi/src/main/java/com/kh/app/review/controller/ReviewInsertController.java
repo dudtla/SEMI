@@ -45,7 +45,7 @@ public class ReviewInsertController extends HttpServlet{
 			
 			//서비스 호출
 			ReviewService service = new ReviewService();
-			int result = service.insert();
+			int result = service.insert(vo);
 			
 			//결과
 			PrintWriter out = resp.getWriter();

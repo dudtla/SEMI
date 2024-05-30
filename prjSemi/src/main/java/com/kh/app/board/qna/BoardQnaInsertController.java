@@ -29,7 +29,7 @@ public class BoardQnaInsertController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			//로그인 한 회원만
-			HttpSession session = req.getSession();
+//			HttpSession session = req.getSession();
 			
 			
 			//data
@@ -37,7 +37,7 @@ public class BoardQnaInsertController extends HttpServlet {
 			String content = req.getParameter("content");
 			
 			//로그인 한 회원만
-			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
+//			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
 			String writerNo = "1";
 //					loginMemberVo.getMemberNo();
 			
