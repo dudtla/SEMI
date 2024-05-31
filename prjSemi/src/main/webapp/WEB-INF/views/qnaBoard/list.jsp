@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
+
 	
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -7,34 +8,35 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/app/resources/css/qnaBoard/list.css">
 </head>
 <body>
 
 	<main>
-		<h1 align="center">QnA¸ñ·Ï Á¶È¸</h1>
+		<h1 align="center">QnAëª©ë¡ ì¡°íšŒ</h1>
 
-		<table>
+			<table>
 			<thead>
 				<tr>
-					<th>¹øÈ£</th>
-					<th>Á¦¸ñ</th>
-					<th>ÀÛ¼ºÀÏ</th>
-					<th>´Ğ³×ÀÓ</th>
+					<th>ë²ˆí˜¸</th>
+					<th>ì œëª©</th>
+					<th>ì‘ì„±ì¼</th>
+					<th>ë‹‰ë„¤ì„</th>
 				</tr>
 			</thead>
 			<tbody>
 			<c:forEach items="${voList}" var="vo">
 				<tr>
-					<td>${vo.qnaNo}</td>
-					<td>${vo.title}</td>
-					<td>${vo.enrollDate}</td>
-					<td>${vo.writerNick}</td>
-				
-				</tr>
+						<td><a href="/app/qna/detail?no=${vo.qnaNo}">${vo.qnaNo}</a></td>
+						<td><a href="/app/qna/detail?no=${vo.qnaNo}">${vo.title}</a></td>
+						<td>${vo.enrollDate}</td>
+						<td>${vo.writerNick}</td>
+					</tr>
 			</c:forEach>
 
 			</tbody>
 		</table>
+
 
 	</main>
 

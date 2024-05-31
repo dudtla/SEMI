@@ -55,13 +55,7 @@ public class BoardQnaService {
 
 
 	
-	//qna상세 조회
-	public BoardQnaVo getQnaDetail(String no) throws Exception {
-		SqlSession ss = SqlSessionTemplate.getSqlSession();
-		BoardQnaVo vo = dao.getQnaDetail(ss, no);
-		ss.close();
-		return vo;
-	}
+
 
 	//qna목록 조회
 	public List<BoardQnaVo> getQnaList() throws Exception {
@@ -75,6 +69,7 @@ public class BoardQnaService {
 	public int insertAnswer(BoardQnaVo vo) throws Exception {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
 		int result = dao.insertAnswer(ss, vo);
+		System.out.println("serviceVo" + vo);
 		if (result == 1) {
 			ss.commit();
 		}else {
@@ -82,6 +77,16 @@ public class BoardQnaService {
 		}
 		ss.close();
 		return result;
+	}
+
+	
+
+	//상세조회
+	public BoardQnaVo getQnaDetail(String no) throws Exception {
+		SqlSession ss = SqlSessionTemplate.getSqlSession();
+		BoardQnaVo vo = dao.getQnaDetail(ss, no);
+		ss.close();
+		return vo;
 	}
 
 

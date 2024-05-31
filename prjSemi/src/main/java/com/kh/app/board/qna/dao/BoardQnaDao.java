@@ -29,6 +29,7 @@ public class BoardQnaDao {
 		return ss.selectOne("BoardQnaMapper.getQnaDeatil", no);
 	}
 
+	//qna답변달기
 	public int insertAnswer(SqlSession ss, BoardQnaVo vo) {
 		return ss.update("BoardQnaMapper.qnaAnswer", vo);
 	}

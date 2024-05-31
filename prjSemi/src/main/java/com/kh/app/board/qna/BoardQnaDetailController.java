@@ -17,21 +17,27 @@ public class BoardQnaDetailController extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 		try {
-			//data
 			String no = req.getParameter("no");
-			
-			//service
 			BoardQnaService service = new BoardQnaService();
 			BoardQnaVo vo = service.getQnaDetail(no);
-			
-			//결과
-			PrintWriter out = resp.getWriter();
-			out.write("qnaVo :" + vo);
-			
+			req.setAttribute("vo", vo);
+			req.getRequestDispatcher("/WEB-INF/views/qnaBoard/detail.jsp").forward(req, resp);
+		
 		} catch (Exception e) {
+			
 			e.printStackTrace();
 		}
+		
 	}
 	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
 }
+	
+	
+
