@@ -19,6 +19,7 @@ public class NoticeWriteController extends HttpServlet{
 	//작성하기 화면
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("/WEB-INF/views/notice/insert.jsp").forward(req, resp);
 	}
 	
 	
@@ -41,14 +42,24 @@ public class NoticeWriteController extends HttpServlet{
 			vo.setContent(content);
 			vo.setAdminNo(adminNo);
 			
+			System.out.println("setVo" + vo);
 			NoticeService service = new NoticeService();
 			int result = service.write(vo);
 			
-			//result
-			PrintWriter out = resp.getWriter();
-			out.write("result :" + result);
+			
+			
+//			//result
+//			if(result == 1) {
+//				req.setAttribute("resultMsg", "공지 작성 성공!");
+//			}else {
+//				req.setAttribute("resultMsg", "공지사항 작성 실패...");
+//			}
+//			
+			
+			resp.sendRedirect("/app/notice/list");
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println("[ERROR-M0005]" + e.getMessage()); 
 		}
 	}
 }

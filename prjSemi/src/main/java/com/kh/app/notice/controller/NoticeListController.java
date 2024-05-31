@@ -27,6 +27,8 @@ public class NoticeListController extends HttpServlet {
 			req.getRequestDispatcher("/WEB-INF/views/notice/list.jsp").forward(req, resp);			
 		} catch (Exception e) {
 			e.printStackTrace();
+			req.setAttribute("errMsg", e.getMessage());
+			req.getRequestDispatcher("/WEB-INF/views/common/error.jsp").forward(req, resp);
 		}
 	}
 	

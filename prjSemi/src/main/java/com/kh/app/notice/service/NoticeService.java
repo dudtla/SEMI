@@ -21,6 +21,7 @@ public class NoticeService {
 	public int write(NoticeVo vo) throws Exception {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
 		int result = dao.write(ss, vo);
+		System.out.println("servicevo"+ vo);
 		if(result == 1) {
 			ss.commit();
 		}else {
