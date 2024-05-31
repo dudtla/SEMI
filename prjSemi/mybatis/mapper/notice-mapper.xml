@@ -5,9 +5,17 @@
 <mapper namespace="NoticeMapper">
 
 	<insert id="write">
-		INSERT INTO MEMBER_NOTI
-		(NO, ADMIN_NO, TITLE, CONTENT) 
-		VALUES (SEQ_MEMBER_NOTI_NO.NEXTVAL , #{adminNo} , #{title}, #{content})
+		INSERT INTO MEMBER_NOTI (
+	    NO
+	    , ADMIN_NO
+	    , TITLE
+	    ,CONTENT
+	)VALUES(
+	    SEQ_MEMBER_NOTI_NO.NEXTVAL
+	    , #{adminNo}
+	    , #{title}
+	    , #{content}
+	)
 	</insert>
 	
 	<select id="getNoticeList" resultType="com.kh.app.notice.vo.NoticeVo">
