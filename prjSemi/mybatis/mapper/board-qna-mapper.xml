@@ -6,8 +6,8 @@
 
 	<insert id="insertQna">
 		INSERT INTO MEMBER_QNA 
-		(QNA_NO, MEMBER_NO , TITLE, CONTENT) 
-		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, #{title}, #{content})
+		(QNA_NO, MEMBER_NO , TITLE, CONTENT, OPEN_YN) 
+		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, #{title}, #{content}, #{openYn})
 	</insert>
 	
 	<select id="getQnaList" resultType="com.kh.app.board.qna.vo.BoardQnaVo">
@@ -29,8 +29,10 @@
 	
 	<update id="qnaAnswer">
 		UPDATE MEMBER_QNA
-		SET ANSWER = #{answer}
-		WHERE QNA_NO = 1
+			SET ANSWER = #{answer},
+    		ANSWER_YN = 'Y'
+		WHERE QNA_NO = #{qnaNo}
+		AND ANSWER_YN = 'N'
 	</update>
 	
 	<update id="qnaDelete" >
