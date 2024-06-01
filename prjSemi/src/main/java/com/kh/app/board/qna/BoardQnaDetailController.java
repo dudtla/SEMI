@@ -20,11 +20,7 @@ public class BoardQnaDetailController extends HttpServlet{
 
 		try {
 			String no = req.getParameter("no");
-			BoardQnaService service = new BoardQnaService();
-			BoardQnaVo vo = service.getQnaDetail(no);
-			req.setAttribute("vo", vo);
-			req.getRequestDispatcher("/WEB-INF/views/qnaBoard/detail.jsp").forward(req, resp);
-		
+
 		} catch (Exception e) {
 			
 			e.printStackTrace();

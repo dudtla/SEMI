@@ -49,15 +49,13 @@ public class BoardQnaInsertController extends HttpServlet {
 			vo.setContent(content);
 			vo.setMemberNo(writerNo);
 			vo.setOpenYn(openYn);
+
 			
 			//서비스
 			BoardQnaService service = new BoardQnaService();
 			int result = service.insert(vo);
 			
-			
-			//result
-			PrintWriter out = resp.getWriter();
-			out.write("result :" + result);
+			resp.sendRedirect("/app/qna/list");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

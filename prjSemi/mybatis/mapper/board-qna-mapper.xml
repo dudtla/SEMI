@@ -10,21 +10,45 @@
 		VALUES (SEQ_QNA_NO.NEXTVAL, #{memberNo}, #{title}, #{content}, #{openYn})
 	</insert>
 	
+	
 	<select id="getQnaList" resultType="com.kh.app.board.qna.vo.BoardQnaVo">
-		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK AS WRITER_NICK
-		FROM MEMBER_QNA Q
-		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
-		WHERE Q.DELETE_YN = 'N'
-		ORDER BY
-		Q.ENROLL_DATE DESC
+		SELECT 
+   			Q.QNA_NO, 
+   		 	Q.TITLE, 
+    		Q.CONTENT, 
+   			Q.ENROLL_DATE, 
+    		M.NICK AS WRITER_NICK
+		FROM 
+    		MEMBER_QNA Q
+		JOIN 
+    		MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
+		WHERE 
+    		Q.DELETE_YN = 'N'
+    	AND Q.OPEN_YN = 'Y'
+		ORDER BY 
+    		Q.ENROLL_DATE DESC
+
 	</select>
 	
-	<select id="getQnaDeatil" resultType="com.kh.app.board.qna.vo.BoardQnaVo">
-		SELECT Q.QNA_NO, Q.TITLE, Q.CONTENT, Q. ENROLL_DATE, M.NICK AS WRITER_NICK
-		FROM MEMBER_QNA Q
-		JOIN MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
-		WHERE Q.QNA_NO = #{no}
-		AND Q.DELETE_YN = 'N'
+	<select id="getQnaDetail" resultType="com.kh.app.board.qna.vo.BoardQnaVo" >
+		SELECT 
+		    Q.QNA_NO, 
+		    Q.TITLE, 
+		    Q.CONTENT, 
+		    Q.ENROLL_DATE, 
+		    M.NICK AS WRITER_NICK,
+		    NVL2(Q.ANSWER_YN, 
+		         CASE WHEN Q.ANSWER_YN = 'N' THEN '미답변' ELSE Q.ANSWER END, 
+		         '미답변') AS ANSWER
+		FROM 
+    	MEMBER_QNA Q
+		JOIN 
+    		MEMBER M ON Q.MEMBER_NO = M.MEMBER_NO
+		WHERE 
+    		Q.DELETE_YN = 'N'
+    	AND Q.QNA_NO = #{qnaNo}
+		ORDER BY 
+    		Q.ENROLL_DATE DESC
 	</select>
 	
 	<update id="qnaAnswer">
