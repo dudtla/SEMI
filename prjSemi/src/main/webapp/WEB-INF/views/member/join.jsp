@@ -34,10 +34,10 @@
 
 				<div id="ctg">
 					<form>
-						<input type="button" value="furniture"> <input
-							type="button" value="home decor"> <input type="button"
-							value="kitchen"> <input type="text" name=""
-							placeholder="search">
+						<input type="button" value="furniture">
+						 <input type="button" value="home decor"> 
+						 <input type="button"value="kitchen">
+						  <input type="text" name=" placeholder="search">
 					</form>
 				</div>
 			</div>

@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Insert title here</title>
+        <title>소파 제품 리스트 화면</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
             integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,7 +27,7 @@
                 <span>CAVIN</span>
                 <span>Taste care selected just for you</span>
                 <ul id="right-side">
-                    <li><a href="">furniture</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>
                     <li><a href="">home decor</a></li>
                     <li><a href="">kitchen</a></li>
                     <form action="" method="post">
@@ -40,33 +40,34 @@
         <div class="main">
             <div id="side-bar">
                 <div id="side-bar2">
-                    <span><a href="">FURNITURE</a></span>
-                    <span><a href="">SOFA</a></span>
-                    <span><a href="">TABLE</a></span>
-                    <span><a href="">BED</a></span>
+                    <span><h2>FURNITURE</h2></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/sofa">SOFA</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/table">TABLE</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/bed">BED</a></span>
                 </div>
             </div>
+           
             <div id="furnitureMain">
-               <div>1</div>
-               <div>2</div>
-               <div>3</div>
-               <div>4</div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/sofa1.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee434743a4d9acacc56511a3f201cc.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee43458dd25496acc58b7f6fd6975f.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4346c1a9b3ffa3d89b3ffedaea09.jpg" alt=""></div>
                
-               <div>5</div>
-               <div>6</div>
-               <div>7</div>
-               <div>8</div>
+               <div><a href="비앤비이탈리아 33,100,000">비앤비 이탈리아<br> Olive green chenille Mario Belli</a></div>
+               <div><a href="비앤비이탈리아 33,100,000">비앤비 이탈리아<br> Light grey chenille</a></div>
+               <div><a href="비앤비이탈리아 13,200,0000">비앤비 이탈리아<br> Black jersey</a></div>
+               <div>  <a href="비앤비이탈리아 17,870,000">비앤비 이탈리아<br> Rope rattier</a></div>
                
-               <div>9</div>
-               <div>10</div>
-               <div>11</div>
-               <div>12</div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee434237ac8666acc561c75a1a1f8d.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4341ad9803c98a69cbb98a898c25.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4341ede4bceeacc5f3af91ca384b.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4344ca1c66beacc51b9cc883b5f2.jpg" alt=""></div>
                
                
-               <div>13</div>
-               <div>14</div>
-               <div>15</div>
-               <div>16</div>
+               <div><a href="비앤비이탈리아 27,240,000">비앤비 이탈리아 <br> Carrara white marble</a></div>
+               <div><a href="폴트로나프라우 8,950,000">폴트로나프라우 <br>Rectangular dining table 86 5/8</a></div>
+               <div><a href="비앤비이탈리아 25,130,000">비앤비이탈리아 dining table<br> Brushed black oak</a></div>
+               <div><a href="비앤비이탈리아 5,350,000">Alanda 18 Rectangular<br> coffee table</a></div>
             </div>
         </div>
 

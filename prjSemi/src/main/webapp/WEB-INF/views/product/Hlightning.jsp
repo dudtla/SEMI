@@ -14,7 +14,7 @@
 	<div class="title">
 		<div id="btn">
 			<input type="button" value="Q&A"> <input type="button"
-				value="My Page"> <input type="button" value="Like">
+				value="My Page"> <input type="button" value="Like"> 
 			<input type="button" value="Login"> <input type="button"
 				value="Cart">
 		</div>
@@ -48,8 +48,9 @@
 				<div>
 					<h2>FURNITURE</h2>
 				</div>
-				<input type="button" value="SOFA"> <input type="button"
-					value="TABLE"> <input type="button" value="BED">
+				<input type="button" value="SOFA" > 
+				<input type="button" value="TABLE"> 
+				<input type="button" value="BED" >
 			</form>
 		</div>
 
