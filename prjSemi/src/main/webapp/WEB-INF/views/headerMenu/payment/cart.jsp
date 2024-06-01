@@ -1,126 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CAVIN_cart</title>
 <%@ include file="/WEB-INF/views/layout/util.jsp" %>
+<link rel="stylesheet" href="/app/resources/css/cart.css">
 </head>
 <body>
 
- <%@ include file="/WEB-INF/views/layout/header.jsp" %>
 
- <!----------------------------------------------------------------->
- <div class="main">
-  <div class="main_box">
-
-     <div class="box_1">
-       <h3>
-         01 SHOPPING <span style="color: #a9a8a8;">> 02 ORDER > 03 ORDER CONFIRMED</span>
-       </h3>
-       
-       
+  <div class="main">
+    <div class="main_box">
+      <div class="box_1">
+        <h3>
+          01 SHOPPING <span style="color: #a9a8a8;">> 02 ORDER > 03 ORDER CONFIRMED</span>
+        </h3>
+      </div>
     </div>
-     <div class="box_2">
+    <div class="box_2">
       <div id="info">
-
-        <div id="info_1">
-          <div>
-            <form>
-              <input type="checkbox">
-            </form>
-          </div>
-
-          <div>
-            <pre>ªÛ«∞¡§∫∏</pre>
-          </div>
-
-        </div>
-        <div id="info_2">
-          ºˆ∑Æ
-        </div>
-        <div id="info_3">
-          ¡÷πÆ±›æ◊
-        </div>
-        <div id="info_4">
-          πËº€∫Ò
-        </div>
-        <form>
+        <div id="info_1">ÏÉÅÌíàÏ†ïÎ≥¥</div>
+        <div id="info_2">Ï£ºÎ¨∏Í∏àÏï°</div>
+        <div id="info_3"> Î∞∞ÏÜ°ÎπÑ</div>
+        <div id="info_4">ÏàòÎüâ</div>
       </div>
-      <div id="result">
-        <div id="result_1">
-          <div>
-         
-              <input type="checkbox">
-      
-          </div>
+      <!--- Product list --->
+      <div id="product">
 
-          <div id="product">
-            <div id="product_1">
-              <img src="../img/22.jpg">
-            </div>
-
-            <div id="product_2">
-              <a href style="font-weight:300; color: #212121;">∏£≈©∑Á¡¶</a>
-              <pre style="font-weight: bolder; font-size: large;">∆ƒΩ∫≈⁄ «¡∑ªƒ° ∏”±◊ 2pc</pre>
-              <pre>42,000ø¯</pre>
-              <pre style="font-size: x-small; font-weight: lighter;">[ªˆªÛ]ƒ⁄Ω∫≈ª∫Ì∑Á&Ω¨∆˘«Œ≈©</pre>
-            </div>
-
-          </div>
-        </div>
-        <div id="result_2">
-          <input type="number" placeholder="ºˆ∑Æ" min="1" max="10">
-        </div>
-        <div id="result_3">
-          <div id="order_amount">
-            <pre style="font-weight: bold; font-size: large;">21,000ø¯</pre>
-            <input type="submit" value="BUY NOW">
-          </div>
-        </div>
-        <div id="result_4">
-          <pre>3,000ø¯ æ˜√ºπËº€</pre>
-        </div>
       </div>
-   
-    </div>
-
-    <div class="box_3">
-      <div>
-        <input type="button" value="º±≈√ªÛ«∞ ªË¡¶">
-        <input type="button" value="«∞¿˝ªÛ«∞ ªË¡¶">
+      <div id="btn">
+        <input type="button" value="Ïû•Î∞îÍµ¨Îãà ÎπÑÏö∞Í∏∞" id="clear">
+        <input type="button" value="Ï£ºÎ¨∏ÌïòÍ∏∞" id="order">
       </div>
-      <div id="coment"><h5>¿ÂπŸ±∏¥œ¥¬ √÷¥Î100∞≥¿« ªÛ«∞¿ª ¥„¿ªºˆ ¿÷Ω¿¥œ¥Ÿ.</h5></div>
-    </div>
-   </div>
-
-   <div class="box_4">
-    <div id="order">
-      <div>√— ¡÷πÆ ±›æ◊</div>
-      <div></div>
-      <div>√— πËº€∫Ò</div>
-      <div></div>
-      <div>√— ∞·¡¶±›æ◊</div>
-    </div>
-    <div id="total">
-      <div>67,000ø¯</div>
-      <img src="../img/plus-round_icon-icons.com_50065.png" id="img_1">
-      <div>6,000ø¯</div>
-      <img src="../img/equals_icon_174534.png" id="img_2">
-      <div>73,000ø¯</div>
     </div>
   </div>
-
-  <div class="box_5">
-    <input type="button" value="CONTINUE SHOPPING">
-    <input type="submit" value="CHECK OUT">
-  </div>
-</form>
- <!----------------------------------------------------------------->
-    
-  <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
-  
+   <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
+  <script src="../Cart/cart.js"></script> 
 </body>
 </html>
