@@ -5,10 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>CAVIN</title>
+
 	 
 </head>
 <body>
 
+
+	
+</head>
+<body>
+
+	
 	<h1>Q&A작성</h1>
 	<form action="/app/qna/write" method="post" >
 		<input type="text" name="title" placeholder="제목">
@@ -22,6 +29,7 @@
 		<br>
 		<input type="submit" value="작성하기">	
 	</form>
+
 	
 	
 	
@@ -37,6 +45,7 @@
 	
 	
 	
+
 
 </body>
 </html>

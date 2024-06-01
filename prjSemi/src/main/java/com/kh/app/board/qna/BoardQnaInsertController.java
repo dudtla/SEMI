@@ -49,8 +49,7 @@ public class BoardQnaInsertController extends HttpServlet {
 			vo.setContent(content);
 			vo.setMemberNo(writerNo);
 			vo.setOpenYn(openYn);
-			
-			System.out.println("set" + vo);
+
 			
 			//서비스
 			BoardQnaService service = new BoardQnaService();

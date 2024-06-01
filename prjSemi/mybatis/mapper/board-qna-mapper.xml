@@ -53,8 +53,10 @@
 	
 	<update id="qnaAnswer">
 		UPDATE MEMBER_QNA
-		SET ANSWER = #{answer}
-		WHERE QNA_NO = 1
+			SET ANSWER = #{answer},
+    		ANSWER_YN = 'Y'
+		WHERE QNA_NO = #{qnaNo}
+		AND ANSWER_YN = 'N'
 	</update>
 	
 	<update id="qnaDelete" >
