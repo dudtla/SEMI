@@ -11,12 +11,12 @@ public class BoardQnaDao {
 	
 	//qna작성
 	public int insert(SqlSession ss, BoardQnaVo vo) {
-		return ss.insert("BoardQnaMapper.write", vo);
+		return ss.insert("BoardQnaMapper.insertQna", vo);
 	}
 
 	//qna삭제
 	public int delete(SqlSession ss, BoardQnaVo vo) {
-		return ss.delete("BoardQnaMapper.qnaDelete", vo);
+		return ss.update("BoardQnaMapper.qnaDelete", vo);
 	}
 
 	//qna목록 조회
@@ -25,8 +25,13 @@ public class BoardQnaDao {
 	}
 
 	//qna상세 조회
-	public BoardQnaVo getQnaDetail(SqlSession ss, String qnaNo) {
-		return ss.selectOne("BoardQnaMapper.getQnaDeatil", qnaNo);
+	public BoardQnaVo getQnaDetail(SqlSession ss, String no) {
+		return ss.selectOne("BoardQnaMapper.getQnaDetail", no);
+	}
+
+	//qna답변달기
+	public int insertAnswer(SqlSession ss, BoardQnaVo vo) {
+		return ss.update("BoardQnaMapper.qnaAnswer", vo);
 	}
 
 }

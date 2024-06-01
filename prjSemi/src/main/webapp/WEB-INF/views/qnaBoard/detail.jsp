@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1 align="center">게시글 상세조회</h1>
+	
 </body>
 </html>

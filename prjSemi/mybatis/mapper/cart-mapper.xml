@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+<mapper namespace="CartMapper">
+	<insert id="insertCart">
+	INSERT INTO CART(
+   	 cart_no,
+   	 member_no,
+   	 product_no,
+   	 product_cnt
+	)VALUES(
+    SEQ_CART_NO.NEXTVAL,
+   	 #{memberNo},
+   	 #{productNo},
+    	#{productCnt}
+	);
+	</insert>
+	
+	<select id="getCartList" resultType="com.kh.app.cart.vo.CartVo">
+	SELECT 
+    	cart_no,
+    	member_no,
+    	product_no,
+   		 product_cnt
+	FROM CART
+	WHERE MEMBER_NO =#{no}
+	AND DELETE_YN = 'N'
+	<!-- 조인을 써야 할 수도... -->
+	</select>
+
+ 	
+</mapper>

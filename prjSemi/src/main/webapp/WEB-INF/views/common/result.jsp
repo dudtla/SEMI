@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<h1>결과화면</h1>
-<h2> ${sessionScope.nick} 님 환영합니다</h2>
+	<h1>결과화면</h1>
+	<h2>메세지 : ${resultMsg}</h2>
 
 </body>
 </html>

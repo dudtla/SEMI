@@ -17,21 +17,23 @@ public class BoardQnaDetailController extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 		try {
-			//data
-			String qnaNo = req.getParameter("no");
-			
-			//service
-			BoardQnaService service = new BoardQnaService();
-			BoardQnaVo vo = service.getQnaDetail(qnaNo);
-			
-			//결과
-			PrintWriter out = resp.getWriter();
-			out.write("qnaVo :" + vo);
-			
+			String no = req.getParameter("no");
+
 		} catch (Exception e) {
+			
 			e.printStackTrace();
 		}
+		
 	}
 	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
 }
+	
+	
+

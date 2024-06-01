@@ -38,7 +38,7 @@ public class BoardQnaDeleteController extends HttpServlet {
 			
 			//result
 			PrintWriter out = resp.getWriter();
-			out.write("BoardQnaVo :" + vo);
+			out.write("delete :" + vo);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
