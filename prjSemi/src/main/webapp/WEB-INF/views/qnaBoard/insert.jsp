@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>CAVIN</title>
+
+	 
+</head>
+<body>
+
+
 	
 </head>
 <body>
@@ -24,9 +30,11 @@
 		<input type="submit" value="작성하기">	
 	</form>
 
+
 	
 	
 	
+
 	
 	
 	

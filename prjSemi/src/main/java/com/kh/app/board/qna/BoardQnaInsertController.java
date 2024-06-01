@@ -30,7 +30,7 @@ public class BoardQnaInsertController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			//로그인 한 회원만
-//			HttpSession session = req.getSession();
+		HttpSession session = req.getSession();
 			
 			
 			//data
