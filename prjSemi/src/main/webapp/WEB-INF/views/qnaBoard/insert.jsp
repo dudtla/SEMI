@@ -5,18 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>CAVIN</title>
-	 <%@ include file="/WEB-INF/views/layout/util.jsp" %>
+	 
 </head>
 <body>
 
-	<%@ include file="/WEB-INF/views/layout/header.jsp" %>
-	
-	
-	<!-- 리뷰 작성  -->
+	<h1>Q&A작성</h1>
 	
 	
 	
-	
+
 	
 	
 	
@@ -25,7 +22,9 @@
 	
 	
 	
-	 <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
+	
+	
+	
 
 </body>
 </html>
