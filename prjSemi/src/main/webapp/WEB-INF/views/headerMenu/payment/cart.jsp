@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_cart</title>
-<%@ include file="/WEB-INF/views/layout/util.jsp" %>
+<link rel="stylesheet" href="/app/resources/css/util/headerFooter.css">
 <link rel="stylesheet" href="/app/resources/css/payment/cart.css">
 </head>
 <body>
