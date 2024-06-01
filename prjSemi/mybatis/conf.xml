@@ -28,7 +28,6 @@
 		<mapper resource="/mapper/cart-mapper.xml" />
 		<mapper resource="/mapper/notice-mapper.xml" />
 		<mapper resource="/mapper/board-qna-mapper.xml" />
-		<mapper resource="/mapper/board-review-mapper.xml" />
 	</mappers>
 
 </configuration>

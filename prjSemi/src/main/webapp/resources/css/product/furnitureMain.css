@@ -1,140 +1,116 @@
-html, body{
-  height: 100%;
- }
- 
- body{
-   display: flex;
-   flex-direction: column;
- }
- .title{
-   height: 200px;
-   background-color: #EFEFEF;
- }
- 
-  #log{
-   font-family: 'Thin Italic', sans-serif;
-   font-style: italic;
-   font-weight: 100; 
- }
- 
- #slogan{
-   font-family: 'Bold Italic', sans-serif;
-   font-style: italic;
-   font-weight: 200; 
- }
- 
- .title > #btn{
-   display: flex;
-   justify-content: end;
- }
- 
- .title input[type="button"]{
-   background-color: transparent;
-   border: none;
-   outline: none;
- }
- 
- .title > #ctg[type="button"]{
-   font-family: 'Extra Light', sans-serif;
-   /* font-style: italic; */
-   font-weight: 200; 
- }
- 
- .title input[type="button"]:hover{
-   background-color: #ffffff;
- }
- 
- #img {
-   display: flex;
-   justify-content: center; /* 양쪽 끝에 배치 */
- }
- 
- /*------------------*/
- 
- #img img {
-   margin-right: 0.5cm; /* 오른쪽 여백 설정 */
- }
- 
- 
- #img2 {
-   width: calc(100vw / 3); /* 첫 번째 이미지는 화면 가로 길이의 1/3 */
- }
- 
- #img1 {
-   width: calc(100vw / 2); /* 두 번째 이미지는 화면 가로 길이의 1/2 */
- }
- 
- .slide-contain,
- .slide-contain2,
- .slide-contain3 {
-   max-width: 400px;
-   max-height: 500px;
-   position: relative;
-   /* margin: 1%; */
-   overflow: hidden; 
- }
- 
- 
- 
- /* 숫자 부분 위에 적은 (1/3) <-- 이런거 */
- .numbertext {
-   color: #f2f2f2;
-   font-size: 12px;
-   padding: 8px 12px;
-   position: absolute;
-   top: 0;
- }
- 
- .main{
-  display: grid;
-  
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr;
-  grid-row: span 4;
-  border-color: black;
-
- 
- }
- 
- #box{
-  display: grid;
- 
-  grid-row: span 6;
-   background-color: #EFEFEF;
-   height: 500px;
-   width: 260px;
-   margin: 1%  
- }
-
- 
- 
- #box input[type="button"] {
-  display: block; /* 인라인 요소를 블록 요소로 변경하여 세로로 정렬 */
-  margin-bottom: 10px; /* 각 버튼 아래에 여백 추가 */
-  border: none; /* 테두리 없애기 */
- 
-}
- 
- #option-menu{
-  height: 50px;
-  width: 50px;
-  border: black;
- }
-
- a:link { 
-  color:black; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  list-style: none;
   text-decoration: none;
-  
-  display: flex;
-  text-align: center;
-  justify-content: center;
-
-  
+  color: black;
 }
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: rgb(239, 239, 239);
+  display: grid;
+  grid-template-rows: 20px 180px;
+}
+
+nav #left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav #left li {
+  margin-right: 20px;
+  color: black;
+}
+
+nav #right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+nav #right span {
+  margin-bottom: 20px;
+}
+
+nav #right span:nth-child(1) {
+  font-size: xx-large;
+}
+
+nav #right span:nth-child(2) {
+  font-size: large;
+  font-weight: 750;
+}
+
+nav #right-side {
+  display: flex;
+}
+
+nav #right-side li {
+  margin-left: 20px;
+}
+
+nav #right-side li:first-child {
+  margin-left: 0;
+}
+
+nav #right-side input {
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+#side-bar {
+  width: 20%;
+  height: auto; 
+  flex-shrink: 0; 
+}
+
+#side-bar2 {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#side-bar2 span {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 20px;
+}
+
+#furnitureMain {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 0.7fr 0.3fr 0.7fr 0.3fr;
+
+}
+
  
  
 
- 
  
  
  footer {
