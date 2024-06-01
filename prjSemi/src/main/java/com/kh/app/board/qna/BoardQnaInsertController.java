@@ -39,9 +39,9 @@ public class BoardQnaInsertController extends HttpServlet {
 			String openYn = req.getParameter("openYn");
 
 			//로그인 한 회원만
-//			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
-			String writerNo = "1";
-//					loginMemberVo.getMemberNo();
+			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
+			String writerNo = loginMemberVo.getMemberNo();
+			
 			
 			
 			BoardQnaVo vo = new BoardQnaVo();
