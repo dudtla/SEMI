@@ -43,7 +43,7 @@ public class AdminLoginController extends HttpServlet {
 				throw new Exception();
 			}
 			HttpSession session =req.getSession();
-			session.setAttribute("alertMsg", "관리자 회원 로그인 성공!");
+			session.setAttribute("resultMsg", "관리자 회원 로그인 성공!");
 			session.setAttribute("loginAdminVo", loginAdminVo);
 			resp.sendRedirect("/app/notice/write");	
 			
