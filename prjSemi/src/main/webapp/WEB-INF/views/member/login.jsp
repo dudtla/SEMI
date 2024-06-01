@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<%@ include file="/WEB-INF/views/layout/util.jsp" %>
+ <link rel="stylesheet" href="/app/resources/css/member/join.css">
 </head>
 
 
@@ -54,8 +54,7 @@
 
 
 	<main>
-		<form action="/app/member/login" method="post"
-			 class="form-login">
+		<form action="/app/member/login" method="post" class="form-login">
 			<div>
 				<h2>로그인</h2>
 			</div>

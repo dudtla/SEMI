@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<%@ include file="/WEB-INF/views/layout/util.jsp" %>
+<title>관리자 로그인</title>
+ <link rel="stylesheet" href="/app/resources/css/member/join.css">
 </head>
 
 
@@ -54,14 +54,15 @@
 
 
 	<main>
-		<form action="/app/admin/login" method="post"
-			 class="form-login">
+		<form action="/app/admin/login" method="post"class="form-login">
 			<div>
 				<h2>관리자로그인</h2>
 			</div>
 			<input type="text" name="id" placeholder="아이디"> 
+			<br>
 			<input type="password" name="pwd" placeholder="비밀번호"> 
-				<br> <input type="submit" value="로그인하기">
+			<br> 
+			<input type="submit" value="로그인하기">
 
 			
 

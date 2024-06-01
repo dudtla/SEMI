@@ -45,7 +45,7 @@ public class AdminLoginController extends HttpServlet {
 			HttpSession session =req.getSession();
 			session.setAttribute("alertMsg", "관리자 회원 로그인 성공!");
 			session.setAttribute("loginAdminVo", loginAdminVo);
-			resp.sendRedirect("/app/home");	
+			resp.sendRedirect("/app/notice/write");	
 			
 		} catch(Exception e) {
 			e.printStackTrace();
