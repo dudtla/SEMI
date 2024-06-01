@@ -22,14 +22,20 @@
 	
 	<select id="getCartList" resultType="com.kh.app.cart.vo.CartVo">
 	SELECT 
-    	cart_no,
-    	member_no,
-    	product_no,
-   		 product_cnt
-	FROM CART
-	WHERE MEMBER_NO =#{no}
-	AND DELETE_YN = 'N'
-	<!-- 조인을 써야 할 수도... -->
+    CART_NO,
+    PRODUCT_CNT,
+    MEMBER_NO,
+    PRODUCT_NO,
+    DESK_OPTION_NO,
+    BED_OPTION_NO,
+    SOFA_OPTION_NO,
+    KITCHEN_WARE_OPTION_NO,
+    CLEANING_STORAGE_OPTION_NO,
+    TABLE_WARE_OPTION_NO,
+    BEDDING_OPTION_NO,
+    HOME_DECOR_OPTION_NO
+FROM CART
+WHERE member_no = #{memberNo}
 	</select>
 
  	
