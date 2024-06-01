@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
- <link rel="stylesheet" href="/app/resources/css/member/join.css">
+<title>회원 로그인</title>
+ <link rel="stylesheet" href="/app/resources/css/member/login.css">
 </head>
 
 
