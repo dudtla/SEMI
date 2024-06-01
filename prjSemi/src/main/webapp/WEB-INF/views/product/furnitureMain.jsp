@@ -28,8 +28,8 @@
                 <span>Taste care selected just for you</span>
                 <ul id="right-side">
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>
-                    <li><a href="">home decor</a></li>
-                    <li><a href="">kitchen</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/product/homedecor">home decor</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/product/kitchen">kitchen</a></li>
                     <form action="" method="post">
                         <input type="text" placeholder="search">
                     </form>

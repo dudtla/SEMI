@@ -31,6 +31,7 @@
 	<select id="login" resultType="com.kh.app.member.vo.MemberVo">
 		SELECT
 			MEMBER_ID
+			, MEMBER_NO
 			, PWD
 			, NICK
 			, ADDRESS

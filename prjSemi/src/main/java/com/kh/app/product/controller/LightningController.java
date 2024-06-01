@@ -12,23 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 import com.kh.app.product.service.ProductService;
 import com.kh.app.product.vo.LightningVo;
 
-@WebServlet("/product/lightninglist")
-public class LightningListController extends HttpServlet {
+@WebServlet("/product/lightning")
+public class LightningController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	
-		try {
-			ProductService ps = new ProductService();
-			List<LightningVo> LightningvoList = ps.getLightningImageList();
-			System.out.println("컨트롤러::::::::" +LightningvoList);
-			
-			//결과처리 
-			req.setAttribute("LightningvoList", LightningvoList);
-			req.getRequestDispatcher("/WEB-INF/views/product/HlightningList.jsp").forward(req, resp);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+
+		req.getRequestDispatcher("/WEB-INF/views/product/Hlightning.jsp").forward(req, resp);
+		
 		
 		
 		
