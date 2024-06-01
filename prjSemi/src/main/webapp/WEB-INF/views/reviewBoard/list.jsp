@@ -25,8 +25,8 @@
 			<tbody>
 			<c:forEach items="${voList}" var="vo">
 				<tr>
-					<td>${vo.reviewNo}</td>
-					<td>${vo.title}</td>
+					<td><a href="/app/review/detail?no=${vo.reviewNo}">${vo.reviewNo}</a></td>
+					<td><a href="/app/review/detail?no=${vo.reviewNo}">$${vo.title}</a></td>
 					<td>${vo.enrollDate}</td>
 					<td>${vo.writerNick}</td>
 				

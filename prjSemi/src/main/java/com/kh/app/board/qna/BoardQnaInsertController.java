@@ -40,14 +40,15 @@ public class BoardQnaInsertController extends HttpServlet {
 
 			//로그인 한 회원만
 			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
-			String writerNo = loginMemberVo.getMemberNo();
+			String memberVo = loginMemberVo.getMemberNo();
+			System.out.println("로그인멤버므오" + loginMemberVo);
 			
 			
 			
 			BoardQnaVo vo = new BoardQnaVo();
 			vo.setTitle(title);
 			vo.setContent(content);
-			vo.setMemberNo(writerNo);
+			vo.setMemberNo(memberVo);
 			vo.setOpenYn(openYn);
 
 			
