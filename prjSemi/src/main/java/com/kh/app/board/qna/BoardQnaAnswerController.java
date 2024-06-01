@@ -17,9 +17,10 @@ import com.kh.app.board.qna.vo.BoardQnaVo;
 @WebServlet("/qna/answer")
 public class BoardQnaAnswerController extends HttpServlet {
 
-	//qna화면 보여주기
+	//qna목록 보여주기
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("/WEB-INF/views/qnaBoard/list.jsp").forward(req, resp);
 	}
 	
 	//답변달기
@@ -30,7 +31,7 @@ public class BoardQnaAnswerController extends HttpServlet {
 //		HttpSession session = req.getSession();
 			//데이터
 			String no = req.getParameter("no");
-			String answer = req.getParameter("ansewr");
+			String answer = req.getParameter("answer");
 			
 			
 			BoardQnaVo vo = new BoardQnaVo();
@@ -48,7 +49,7 @@ public class BoardQnaAnswerController extends HttpServlet {
 			BoardQnaService service = new BoardQnaService();
 			int result = service.insertAnswer(vo);
 			
-			//result
+			//result//답변 단 화면 보여주기???
 			PrintWriter out = resp.getWriter();
 			out.write("result :" + result);
 			
