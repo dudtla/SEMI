@@ -27,6 +27,7 @@ public class BoardQnaService {
 		SqlSession ss = SqlSessionTemplate.getSqlSession();
 		int result = dao.insert(ss, vo);
 		
+		System.out.println("service" + vo);
 		if(result == 1) {
 			ss.commit();
 		}else {

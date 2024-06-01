@@ -22,6 +22,7 @@ public class BoardQnaInsertController extends HttpServlet {
 	//작성 화면 보여주기
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("/WEB-INF/views/qnaBoard/insert.jsp").forward(req, resp);
 	}
 	
 	//작성 처리
@@ -35,7 +36,8 @@ public class BoardQnaInsertController extends HttpServlet {
 			//data
 			String title = req.getParameter("title");
 			String content = req.getParameter("content");
-			
+			String openYn = req.getParameter("openYn");
+
 			//로그인 한 회원만
 //			MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");
 			String writerNo = "1";
@@ -46,15 +48,15 @@ public class BoardQnaInsertController extends HttpServlet {
 			vo.setTitle(title);
 			vo.setContent(content);
 			vo.setMemberNo(writerNo);
+			vo.setOpenYn(openYn);
+			
+			System.out.println("set" + vo);
 			
 			//서비스
 			BoardQnaService service = new BoardQnaService();
 			int result = service.insert(vo);
 			
-			
-			//result
-			PrintWriter out = resp.getWriter();
-			out.write("result :" + result);
+			resp.sendRedirect("/app/qna/list");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

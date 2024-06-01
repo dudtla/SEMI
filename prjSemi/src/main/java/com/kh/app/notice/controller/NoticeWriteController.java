@@ -9,7 +9,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.kh.app.admin.vo.AdminVo;
 import com.kh.app.notice.service.NoticeService;
 import com.kh.app.notice.vo.NoticeVo;
 
@@ -27,15 +29,15 @@ public class NoticeWriteController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
+			HttpSession session = req.getSession();
 			
 			//data
 			String title = req.getParameter("title");
 			String content = req.getParameter("content");
-			String adminNo = "2";
 			
-//		HttpSession session = req.getSession();
-//		AdminVo loginAdminVo = (AdminVo) session.getAttribute("loginAdminVo");
-//		String writerNo = loginAdminVo.getNo();
+			
+		AdminVo loginAdminVo = (AdminVo) session.getAttribute("loginAdminVo");
+		String adminNo = loginAdminVo.getAdminNo();
 			
 			NoticeVo vo = new NoticeVo();
 			vo.setTitle(title);

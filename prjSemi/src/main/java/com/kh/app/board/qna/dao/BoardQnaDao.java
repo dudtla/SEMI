@@ -26,7 +26,7 @@ public class BoardQnaDao {
 
 	//qna상세 조회
 	public BoardQnaVo getQnaDetail(SqlSession ss, String no) {
-		return ss.selectOne("BoardQnaMapper.getQnaDeatil", no);
+		return ss.selectOne("BoardQnaMapper.getQnaDetail", no);
 	}
 
 	public int insertAnswer(SqlSession ss, BoardQnaVo vo) {
