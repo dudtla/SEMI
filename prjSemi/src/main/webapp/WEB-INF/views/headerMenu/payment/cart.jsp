@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_cart</title>
 <%@ include file="/WEB-INF/views/layout/util.jsp" %>
-<link rel="stylesheet" href="/app/resources/css/cart.css">
+<link rel="stylesheet" href="/app/resources/css/payment/cart.css">
 </head>
 <body>
 
@@ -36,6 +39,7 @@
     </div>
   </div>
    <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
-  <script src="../Cart/cart.js"></script> 
+   
+  <script src="resources/js/payment/cart.js"></script> 
 </body>
 </html>
