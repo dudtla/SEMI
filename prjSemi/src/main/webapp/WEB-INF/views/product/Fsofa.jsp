@@ -19,7 +19,7 @@
                     <li><a href="">Q&A</a></li>
                     <li><a href="">My Page</a></li>
                     <li><a href="">Like</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/member/login">Login</a></li>
                     <li><a href="">Cart</a></li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@
                 <div id="side-bar2">
                     <span><h2>FURNITURE</h2></span>
                     <span><a href="http://127.0.0.1:8888/app/product/sofa">SOFA</a></span>
-                    <span><a href="http://127.0.0.1:8888/app/product/table">TABLE</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/desk">TABLE</a></span>
                     <span><a href="http://127.0.0.1:8888/app/product/bed">BED</a></span>
                 </div>
             </div>
