@@ -31,7 +31,9 @@
 						<td><a href="/app/qna/detail?no=${vo.qnaNo}">${vo.title}</a></td>
 						<td>${vo.enrollDate}</td>
 						<td>${vo.writerNick}</td>
-					</tr>
+						<td>
+                        
+				</tr>
 			</c:forEach>
 
 			</tbody>
