@@ -1,8 +1,8 @@
 
-<link rel="stylesheet" href="/app/resources/css/util/home.css">
+
 <link rel="stylesheet" href="/app/resources/css/util/headerFooter.css">
 <link rel="stylesheet" href="/app/resources/css/util/headerMenu.css">
-<script src="/app/resources/js/home.js"></script>
+
 
 
 

@@ -13,8 +13,12 @@
 <body>
 
 
+
   <div class="main">
     <div class="main_box">
+
+
+    
       <div class="box_1">
         <h3>
           01 SHOPPING <span style="color: #a9a8a8;">> 02 ORDER > 03 ORDER CONFIRMED</span>
@@ -25,8 +29,8 @@
       <div id="info">
         <div id="info_1">상품정보</div>
         <div id="info_2">주문금액</div>
-        <div id="info_3"> 배송비</div>
-        <div id="info_4">수량</div>
+        <div id="info_3">수량</div>
+        <div id="info_4">배송비</div>
       </div>
       <!--- Product list --->
       <div id="product">
