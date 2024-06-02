@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>조명 제품 리스트 화면</title>
+        <title>homedecor </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
             integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +28,7 @@
                 <span>Taste care selected just for you</span>
                <ul id="right-side">
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>
-                    <li><a href="http://127.0.0.1:8888/app/product/homedecor">home decor</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/product/homedecor/main">home decor</a></li>
                     <li><a href="http://127.0.0.1:8888/app/product/kitchen">kitchen</a></li>
                     <form action="" method="post">
                         <input type="text" placeholder="search">
@@ -43,13 +43,13 @@
                     <span><h2>HOME DECOR</h2></span>
                     <span><a href="http://127.0.0.1:8888/app/product/sofa">LIGHTNING</a></span>
                     <span><a href="http://127.0.0.1:8888/app/product/table">BEDDING</a></span>
-                    <span><a href="http://127.0.0.1:8888/app/product/bed">HOME DECOR</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/homedecor">HOME DECOR</a></span>
                 </div>
             </div>
            
             <div id="furnitureMain">
                <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/46c6b943487440f5911d7d47f113654e_20210526094614.jpg" alt=""></div>
-               <div> <img width="300px" height="300px" src="/app/resources/upload/homedecor/main/11ee434743a4d9acacc56511a3f201cc.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/homedecor/11ee434743a4d9acacc56511a3f201cc.jpg" alt=""></div>
                <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee43458dd25496acc58b7f6fd6975f.jpg" alt=""></div>
                <div> <img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4346c1a9b3ffa3d89b3ffedaea09.jpg" alt=""></div>
                
