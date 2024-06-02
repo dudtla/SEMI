@@ -5,10 +5,10 @@
 
     <div id="btn">
       <input type="button" value="Q&A" onclick="window.open('//127.0.0.1:5500/boardQnA/boardQnA.html')">
-      <input type="button" value="My Page" onclick="window.open('http://127.0.0.1:8181/app/mypage')">
+      <input type="button" value="My Page" onclick="window.open('http://127.0.0.1:8888/app/mypage')">
       <input type="button" value="Like">
-      <input type="button" value="Login" onclick="location.href='http://127.0.0.1:8181/app/member/login'" />
-      <input type="button" value="Cart" onclick="window.open('http://127.0.0.1:8181/app/cart')">
+      <input type="button" value="Login" onclick="location.href='http://127.0.0.1:8888/app/member/login'" />
+      <input type="button" value="Cart" onclick="window.open('http://127.0.0.1:8888/app/cart')">
     </div>
   
     <div>
