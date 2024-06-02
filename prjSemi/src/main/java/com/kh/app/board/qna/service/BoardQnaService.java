@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.kh.app.admin.vo.AdminVo;
 import com.kh.app.board.qna.dao.BoardQnaDao;
 import com.kh.app.board.qna.vo.BoardQnaVo;
 import com.kh.app.db.SqlSessionTemplate;

@@ -25,15 +25,15 @@ public class BoardQnaDetailController extends HttpServlet{
 			BoardQnaService service = new BoardQnaService();
 			BoardQnaVo vo = service.getQnaDetail(no);
 			
-			System.out.println("컨트롤러" + vo);
+			
 			
 			req.setAttribute("vo", vo);
-			System.out.println("화면 보여주기" + vo);
 			req.getRequestDispatcher("/WEB-INF/views/qnaBoard/detail.jsp").forward(req, resp);
 
 		} catch (Exception e) {
-			
 			e.printStackTrace();
+			req.setAttribute("errorMessage", "상세 정보를 가져오는 중 오류가 발생했습니다.");
+            req.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(req, resp);
 		}
 		
 	}

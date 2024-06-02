@@ -44,7 +44,7 @@ public class NoticeWriteController extends HttpServlet{
 			vo.setContent(content);
 			vo.setAdminNo(adminNo);
 			
-			System.out.println("setVo" + vo);
+			
 			NoticeService service = new NoticeService();
 			int result = service.write(vo);
 			

@@ -33,6 +33,17 @@
 			</tbody>
 		</table>
 
+    <!-- 관리자로 로그인한 경우에만 답변달기 버튼을 표시 -->
+    <c:if test="${not empty sessionScope.loginAdminVo}">
+    <form action="/app/qna/answer" method="post">
+    	<br>
+    	<span>답변작성</span>
+    	<br>
+    	<textarea name="answer" placeholder="냐용"></textarea>	
+        <input type="hidden" name="no" value="${vo.qnaNo}">
+        <button type="submit">답변달기</button>
+    </form>
+</c:if>
 
 
 

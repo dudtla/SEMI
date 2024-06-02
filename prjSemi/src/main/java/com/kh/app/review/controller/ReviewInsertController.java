@@ -31,11 +31,6 @@ public class ReviewInsertController extends HttpServlet{
             HttpSession session = req.getSession();
 
             MemberVo loginMemberVo = (MemberVo) session.getAttribute("loginMemberVo");
-            if (loginMemberVo == null) {
-                // 로그인되지 않은 경우 로그인 페이지로 리다이렉트
-                resp.sendRedirect("/app/member/login");
-                return;
-            }
 
             // 데이터 추출
             String title = req.getParameter("title");
