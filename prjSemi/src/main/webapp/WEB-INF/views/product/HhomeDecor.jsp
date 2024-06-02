@@ -19,7 +19,7 @@
                     <li><a href="">Q&A</a></li>
                     <li><a href="">My Page</a></li>
                     <li><a href="">Like</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="http://127.0.0.1:8888/app/member/login">Login</a></li>
                     <li><a href="">Cart</a></li>
                 </ul>
             </div>
@@ -41,33 +41,33 @@
             <div id="side-bar">
                 <div id="side-bar2">
                     <span><h2>HOME DECOR</h2></span>
-                    <span><a href="http://127.0.0.1:8888/app/product/sofa">LIGHTNING</a></span>
-                    <span><a href="http://127.0.0.1:8888/app/product/table">BEDDING</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/lightning">LIGHTNING</a></span>
+                    <span><a href="http://127.0.0.1:8888/app/product/bedding">BEDDING</a></span>
                     <span><a href="http://127.0.0.1:8888/app/product/homedecor">HOME DECOR</a></span>
                 </div>
             </div>
            
             <div id="furnitureMain">
-               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/46c6b943487440f5911d7d47f113654e_20210526094614.jpg" alt=""></div>
-               <div> <img width="300px" height="300px" src="/app/resources/upload/homedecor/11ee434743a4d9acacc56511a3f201cc.jpg" alt=""></div>
-               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee43458dd25496acc58b7f6fd6975f.jpg" alt=""></div>
-               <div> <img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4346c1a9b3ffa3d89b3ffedaea09.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/8dd09d39579f4a73a9b9a2d1b7d80945_20211110185056.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/homedecor/11eea939dfa7cc92b238d58c05ede64f.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/1114b35bab4342428ede646eb5400699_20211110190048.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/homedecor/11eee057cca695b29a76f5cbde7dd93b.jpg" alt=""></div>
                
-               <div><a href="비앤비이탈리아 33,100,000">LEXON MINA 무드등 조명 램프<br>미나 무드등 조명 램프</a></div>
-               <div><a href="비앤비이탈리아 33,100,000">비앤비 이탈리아<br> Light grey chenille</a></div>
-               <div><a href="비앤비이탈리아 13,200,0000">비앤비 이탈리아<br> Black jersey</a></div>
-               <div>  <a href="비앤비이탈리아 17,870,000">비앤비 이탈리아<br> Rope rattier</a></div>
+               <div><a href="비앤비이탈리아 33,100,000">LOFA SEOUL<br>사과 문진</a></div>
+               <div><a href="비앤비이탈리아 33,100,000">LOFA SEOUL<br>머쉬룸 램프</a></div>
+               <div><a href="비앤비이탈리아 13,200,0000">LOFA SEOUL<br>pear paperweight</a></div>
+               <div>  <a href="비앤비이탈리아 17,870,000">ioua<br>레트로 벽시계</a></div>
                
-               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee434237ac8666acc561c75a1a1f8d.jpg" alt=""></div>
-               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4341ad9803c98a69cbb98a898c25.jpg" alt=""></div>
-               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4341ede4bceeacc5f3af91ca384b.jpg" alt=""></div>
-               <div><img width="300px" height="300px" src="/app/resources/upload/furniture/main/11ee4344ca1c66beacc51b9cc883b5f2.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/11ef079bcb9c5487bb14e555e847b524.png" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/90420f5ca25743798265d592ec8b7201_20220824145634.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/94f3be4e309e473ca165fe44cf1a63dd_20210118031133.jpg" alt=""></div>
+               <div><img width="300px" height="300px" src="/app/resources/upload/homedecor/11eec012439d23d591eb677b71ef7101.jpg" alt=""></div>
                
                
-               <div><a href="비앤비이탈리아 27,240,000">비앤비 이탈리아 <br> Carrara white marble</a></div>
-               <div><a href="폴트로나프라우 8,950,000">폴트로나프라우 <br>Rectangular dining table 86 5/8</a></div>
-               <div><a href="비앤비이탈리아 25,130,000">비앤비이탈리아 dining table<br> Brushed black oak</a></div>
-               <div><a href="비앤비이탈리아 5,350,000">Alanda 18 Rectangular<br> coffee table</a></div>
+               <div><a href="비앤비이탈리아 27,240,000">포레울 <br> 벽걸이 쿠션 미러 </a></div>
+               <div><a href="폴트로나프라우 8,950,000">멜팅스튜디오 <br>윤슬 패브릭 포스터</a></div>
+               <div><a href="비앤비이탈리아 25,130,000">블루발코니<br> 행잉모빌</a></div>
+               <div><a href="비앤비이탈리아 5,350,000">쿠나장롱<br> 이우환 포스터 </a></div>
             </div>
         </div>
 
