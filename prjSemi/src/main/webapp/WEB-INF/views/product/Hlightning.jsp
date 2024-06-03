@@ -16,15 +16,15 @@
         <nav>
             <div>
                 <ul id="left">
-                    <li><a href="">Q&A</a></li>
-                    <li><a href="">My Page</a></li>
-                    <li><a href="">Like</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Cart</a></li>
+                <li><a href="http://127.0.0.1:8888/app/qna/write">Q&A</a></li>
+                <li><a href="http://127.0.0.1:8888/app/mypage">My Page</a></li>
+                <li><a href="">Like</a></li>
+                <li><a href="http://127.0.0.1:8888/app/member/login">Login</a></li>
+                <li><a href="http://127.0.0.1:8888/app/qna/write">Cart</a></li>
                 </ul>
             </div>
             <div id="right">
-                <span>CAVIN</span>
+                <h2 id="log" onclick="location.href='http://127.0.0.1:8888/app/home'">CAVIN</h2>
                 <span>Taste care selected just for you</span>
                <ul id="right-side">
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>

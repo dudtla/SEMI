@@ -16,15 +16,15 @@
         <nav>
             <div>
                 <ul id="left">
-                    <li><a href="">Q&A</a></li>
-                    <li><a href="">My Page</a></li>
-                    <li><a href="">Like</a></li>
-                    <li><a href="http://127.0.0.1:8888/app/member/login">Login</a></li>
-                    <li><a href="">Cart</a></li>
+                <li><a href="http://127.0.0.1:8888/app/qna/write">Q&A</a></li>
+                <li><a href="http://127.0.0.1:8888/app/mypage">My Page</a></li>
+                <li><a href="">Like</a></li>
+                <li><a href="http://127.0.0.1:8888/app/member/login">Login</a></li>
+                <li><a href="http://127.0.0.1:8888/app/qna/write">Cart</a></li>
                 </ul>
             </div>
             <div id="right">
-                <span>CAVIN</span>
+                <h2 id="log" onclick="location.href='http://127.0.0.1:8888/app/home'">CAVIN</h2>
                 <span>Taste care selected just for you</span>
                <ul id="right-side">
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>
@@ -48,12 +48,12 @@
             </div>
            
             <div id="furnitureMain">
-               <div> <img width="300px" height="300px" src="/app/resources/upload/kitchen/11ee506ad4138af783bcbfc7c2b4a18f.jpg" alt=""></div>
+               <div> <img width="300px" height="300px" src="/app/resources/upload/kitchen/22.jpg" alt=""></div>
                <div> <img width="300px" height="300px" src="/app/resources/upload/kitchen/11ee506c22db960fa5b357e72b30618a.jpg" alt=""></div>
                <div><img width="300px" height="300px" src="/app/resources/upload/kitchen/11ee5075c0b6e00d8a7f35613bf90777.jpg" alt=""></div>
                <div><img width="300px" height="300px" src="/app/resources/upload/kitchen/989e4c882a0941fca5f18c61391fdaa4_20221007194845.jpg" alt=""></div>
                
-               <div><a href="비앤비이탈리아 33,100,000">라메킨 <br>라이트 블루 오렌지 </a></div>
+               <div><a href="http://127.0.0.1:8888/app/show">르쿠르제 <br>파스텔 머그컵 </a></div>
                <div><a href="비앤비이탈리아 17,870,000">플랫플레이트 <br>라이트 블루 오렌지</a></div>
                <div><a href="비앤비이탈리아 25,130,000">씨리얼보울 <br>라이트 블루 오렌지</a></div>
                <div><a href="비앤비이탈리아 5,350,000"> 텀블러<br>민트마블</a></div>
