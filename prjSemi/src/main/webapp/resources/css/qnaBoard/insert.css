@@ -96,14 +96,9 @@ main {
    font-size: larger;
  }
  #time{
-   color: black
+   color: rgb(170, 168, 168);
  }
  
  #up{
    text-align: left;
  }
-
-
- tr:hover td {
-  background-color: #c7edcb; /* hover 시 배경색 변경 */
-}
