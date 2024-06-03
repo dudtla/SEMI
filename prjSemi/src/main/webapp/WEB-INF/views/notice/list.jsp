@@ -16,7 +16,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th>번호</th>
+					<th>작성자 번호</th>
 					<th>제목</th>
 					<th>작성일</th>
 				</tr>
@@ -24,7 +24,7 @@
 			<tbody>
 			<c:forEach items="${voList}" var="vo">
 				<tr>
-					<td>${vo.no}</td>
+					<td>${vo.adminNo}</td>
 					<td>${vo.title}</td>
 					<td>${vo.enrollDate}</td>
 				</tr>
