@@ -4,9 +4,9 @@ function displayOrderSummary() {
   const totalPayment = totalAmount + totalShipping;
 
   // 각 요소에 계산된 값 표시
-  document.getElementById("totalPrice").textContent = "Total Price: " + totalAmount.toFixed(2)+"₩";
-  document.getElementById("shippingCost").textContent = "Shipping Cost: " + totalShipping.toFixed(2)+"₩";
-  document.getElementById("totalOrderPrice").textContent = "Total Order Price: " + totalPayment.toFixed(2)+"₩";
+  document.getElementById("totalPrice").textContent = "Total Price: " + totalAmount+"₩";
+  document.getElementById("shippingCost").textContent = "Shipping Cost: " + totalShipping+"₩";
+  document.getElementById("totalOrderPrice").textContent = "Total Order Price: " + totalPayment+"₩";
 }
 
 

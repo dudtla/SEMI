@@ -69,3 +69,34 @@
   display: grid;
   justify-content: center;
 }
+
+#kakao{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+#kakao input[type="button"]{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  
+    width: 200px;
+  height: 50px;
+  margin: 10%;
+
+  background-color: #212121;
+  color: #EFEFEF;
+
+  outline: none;
+  border: none;
+  font-family: 'Bold Italic', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+
+#kakao input[type="button"]:hover{
+  background-color: #EFEFEF;
+  color: #212121;
+}
