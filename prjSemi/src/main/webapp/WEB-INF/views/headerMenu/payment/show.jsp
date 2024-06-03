@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,8 @@
   <title>Document</title>
 </head>
 <body>
-  <a href="http://127.0.0.1:8181/app/cart">장바구니로 이동</a>
+  <script src="resources/js/payment/order.js"></script>
+  <a href="http://127.0.0.1:8888/app/cart">장바구니로 이동</a>
   
   <form>
     <input type="hidden" name="item_key" value="a001">
@@ -56,8 +57,6 @@
     <input type="button" value="장바구니 담기" onclick="putCart(this.form)">
   </form>
 
-<script type="text/javascript" src="/app/resources/js/show.js"></script>
 
 </body>
 </html>
-    

@@ -6,12 +6,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAVIN_cart</title>
-<link rel="stylesheet" href="/app/resources/css/util/headerFooter.css">
-<link rel="stylesheet" href="/app/resources/css/payment/cart.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="/app/resources/css/payment/cart.css">
 </head>
 <body>
-
 
   <div class="main">
     <div class="main_box">
@@ -38,8 +36,8 @@
       </div>
     </div>
   </div>
-   <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
-   
-  <script src="resources/js/payment/cart.js"></script> 
+  <script src="/WEB-INF/resources/js/payment/cart.js"></script> 
+
 </body>
 </html>
+    
