@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_order</title>
-
+	<script src="https://cdn.iamport.kr/v1/iamport.js"></script>
   <link rel="stylesheet" href="resources/css/payment/order.css">
 </head>
 <body>
@@ -71,13 +71,13 @@
 
 
 <div id="kakao">
-  <input type="button" value="카카오페이">
+    <button>pay now</button>
 </div>
 
 
 
 
-	<script src="https://cdn.portone.io/v2/browser-sdk.js"></script>
+
    <script src="resources/js/payment/order.js"></script>
 </body>
 </html>
