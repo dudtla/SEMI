@@ -7,9 +7,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_order</title>
-  <link rel="stylesheet" href="../order/order.css">
+
+  <link rel="stylesheet" href="resources/css/payment/order.css">
 </head>
 <body>
+
 
   <div class="main">
 
@@ -71,7 +73,6 @@
 
 
 
-
-<script src="/WEB-INF/resources/js/payment/order.js"></script>
+   <script src="resources/js/payment/order.js"></script>
 </body>
 </html>

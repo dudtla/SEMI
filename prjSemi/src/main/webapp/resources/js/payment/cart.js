@@ -40,17 +40,22 @@ document.getElementById("clear").addEventListener("click", function() {
 });
 
 
-// 주문 버튼 클릭 시 동작
 document.getElementById("order").addEventListener("click", function() {
+  console.log("Order button clicked"); // 이벤트 핸들러 등록 확인
   const productCount = Object.keys(localStorage).length;
+  
+  console.log("Product count:", productCount); // productCount 값 확인
   
   if (productCount === 0) {
     alert('장바구니에 상품이 없습니다.');
   } else {
     alert('주문이 완료되었습니다.');
-    window.location.href = 'http://127.0.0.1:5500/done/order/order.html'; // 이동할 주문 페이지 경로
+    console.log("Navigating to /app/order"); // 페이지 이동 전 로그
+    window.location.href = '/app/order'; // 이동할 주문 페이지 경로
   }
 });
+
+
 
 
 displayCartItems();
