@@ -11,15 +11,16 @@
 <body>
     <header>
         <div class="title">
-            <div id="btn">
-                <input type="button" value="Q&A" onclick="window.open('//127.0.0.1:5500/boardQnA/boardQnA.html')">
-                <input type="button" value="My Page" >
-                <input type="button" value="Like">
-                <input type="button" value="Login" onclick="location.href = '/app/member/login'">
-                <input type="button" value="Cart">
+             <div id="btn">
+			    <input type="button" value="Q&A" onclick="location.href='/app/qna/write'">
+			    <input type="button" value="My Page" onclick="location.href='/app/mypage'">
+			    <input type="button" value="Like">
+			    <input type="button" value="Cart" onclick="location.href='/app/qna/write'">
             </div>
+
             <div>
-                <h2 id="log" onclick="location.href = '/app/home'">CAVIN</h2>
+                <h2 id="log"
+                    onClick="location.href='http://127.0.0.1:8888/app/home'">CAVIN</h2>
             </div>
             <div id="title_box">
                 <div id="slogan">

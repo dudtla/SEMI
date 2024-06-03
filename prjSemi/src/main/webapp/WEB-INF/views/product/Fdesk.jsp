@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div id="right">
-                <span>CAVIN</span>
+                <h2 id="log" onclick="location.href='http://127.0.0.1:8888/app/home'">CAVIN</h2>
                 <span>Taste care selected just for you</span>
                 <ul id="right-side">
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>

@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.kh.app.product.service.ProductService;
 import com.kh.app.product.vo.LightningVo;
 
+import oracle.jdbc.logging.annotations.Log;
+
 @WebServlet("/product/lightninglist")
 public class LightningListController extends HttpServlet {
 
@@ -22,6 +24,12 @@ public class LightningListController extends HttpServlet {
 			ProductService ps = new ProductService();
 			List<LightningVo> LightningvoList = ps.getLightningImageList();
 			System.out.println("컨트롤러::::::::" +LightningvoList);
+			
+			System.out.println("============");
+			for (LightningVo lightningVo : LightningvoList) {
+				System.out.println(lightningVo);
+			}
+			System.out.println("============");
 			
 			//결과처리 
 			req.setAttribute("LightningvoList", LightningvoList);
