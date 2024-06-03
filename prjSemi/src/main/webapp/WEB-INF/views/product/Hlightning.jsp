@@ -30,8 +30,8 @@
                     <li><a href="http://127.0.0.1:8888/app/product/main">furniture</a></li>
                     <li><a href="http://127.0.0.1:8888/app/product/lightning">home decor</a></li>
                     <li><a href="http://127.0.0.1:8888/app/product/kitchen">kitchen</a></li>
-                    <form action="" method="post">
-                        <input type="text" placeholder="search">
+                  <form action="http://127.0.0.1:8888/app/product/lightninglist" method="get">
+           			<input type="text" name="query" placeholder="search">
                     </form>
                 </ul>
             </div>
