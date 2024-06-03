@@ -7,9 +7,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <script src="resources/js/payment/show.js"></script>
+  
 </head>
 <body>
-  <script src="resources/js/payment/order.js"></script>
   <a href="http://127.0.0.1:8888/app/cart">장바구니로 이동</a>
   
   <form>

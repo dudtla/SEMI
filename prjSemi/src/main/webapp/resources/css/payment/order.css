@@ -1,0 +1,71 @@
+.main{
+  display: grid;
+  color: #212121;
+  margin: 10%;
+}
+
+.box_1{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5%;
+}
+
+
+/*------------------*/
+
+.box_lef{
+  border-top: 5px solid #212121;
+}
+
+
+
+#show{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ margin: 15%;
+ margin-top: 0%;
+ margin-bottom: 5%;
+
+}
+
+#box_a{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 5%;
+}
+
+#box_b{
+  border-left: 1px solid #212121;
+  border-right: 1px solid #212121;
+  margin-left: 5%;
+
+  display: grid;
+  justify-content: center;
+}
+
+#list{
+  display: grid;
+  justify-content: center;
+  font-size: medium;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+#box_a form{
+  margin: 5%;
+  display: grid;
+  justify-content: center;
+}
+
+
+#totalOrderPrice{
+  font-size: medium;
+  font-family: 'Bold Italic', sans-serif;
+  font-weight: 700;
+}
+/*------------------------*/
+#slogan{
+  display: grid;
+  justify-content: center;
+}

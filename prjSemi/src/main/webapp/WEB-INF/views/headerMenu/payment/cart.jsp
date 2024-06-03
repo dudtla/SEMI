@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/app/resources/css/payment/cart.css">
+
+  <link rel="stylesheet" href="resources/css/payment/cart.css">
 </head>
 <body>
 
@@ -36,8 +37,7 @@
       </div>
     </div>
   </div>
-  <script src="/WEB-INF/resources/js/payment/cart.js"></script> 
-
+	  <script src="resources/js/payment/cart.js"></script>
 </body>
 </html>
     
