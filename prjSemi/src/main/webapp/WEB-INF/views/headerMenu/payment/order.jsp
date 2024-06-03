@@ -70,6 +70,11 @@
 </div>
 
 
+<div id="kakao">
+  <input type="button" value="카카오페이">
+</div>
+
+
 
 
 
