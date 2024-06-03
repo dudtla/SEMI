@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -21,13 +22,7 @@
       <hr>
       <div id="view_ctg">
         <h4>나의 쇼핑정보</h4>
-        <input type="button" value="회원정보 수정"  onclick="'http://127.0.0.1:8888/app/member/edit'">
-        <input type="button" value="주문배송 조회"  onclick="location.href">
-        <input type="button" value="상품리뷰"  onclick="location.reload()">
-        <h4>고객센터</h4>
-        <input type="button" value="1:1 문의내역"  onclick="location.href='http://127.0.0.1:5500/oneToone/oneToone.html'">
-        <input type="button" value="상품 Q&A 내역"  onclick="location.href='http://127.0.0.1:5500/QnA/QnA.html'">
-        <input type="button" value="공지사항"  onclick="location.href='http://127.0.0.1:5500/Noti/noti.html'">
+
       </div>
     </div>
   </div>
@@ -64,6 +59,7 @@
 
 
 </div>
+
 
 <!--------------------------------------------------------------------------->
  <%@ include file="/WEB-INF/views/layout/footer.jsp" %>
