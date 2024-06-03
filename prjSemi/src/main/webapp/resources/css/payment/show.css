@@ -1,0 +1,52 @@
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 10%;
+  margin-left: 0%;
+  height: 500px;
+  
+    border-left: 1px solid #212121;
+  border-right: 1px solid #212121;
+}
+
+.box form{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
+  
+  
+}
+
+.box input{
+	margin: 5%;
+	border-width: 0;
+	text-align: center;
+	  font-size: medium;
+  	font-family: 'Bold Italic', sans-serif;
+  	font-weight: 700;
+}
+
+.box select{
+  	width: 100%;
+	border-width: 0;
+	text-align: center;
+	  font-size: medium;
+ 	 font-family: 'Bold Italic', sans-serif;
+ 	 font-weight: 700;
+}
+
+img{
+	margin: 10%;
+	margin-right: 0%;
+	width: 500px;
+ 	height: 500px;
+}
