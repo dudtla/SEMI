@@ -91,7 +91,8 @@ main {
             box-sizing: border-box; /* 박스 크기 계산을 위해 */
         }
 
-        input[type="submit"],input[type="button"],
+        input[type="submit"],
+        input[type="button"],
         button {
             font-size: 20px;
             background-color: #212121; /* 기본 버튼 배경 색상 */
@@ -100,7 +101,7 @@ main {
             cursor: pointer; /* 커서를 포인터로 변경 */
         }
 
-        input[type="submit"]:hover,input[type="button"]:hover,
+        input[type="submit"]:hover,  input[type="button"]:hover,
         button:hover {
             background-color: rgb(80, 85, 90); /* 호버 시 버튼 배경 색상 */
         }

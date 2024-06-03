@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="/app/resources/css/member/edit.css">
     <%@ include file="/WEB-INF/views/layout/util.jsp" %>
+    
 </head>
 
 
@@ -54,8 +56,8 @@
  <main> 
     <form action="/app/member/edit" method="post" class="form-edit">
         <h1>회원정보수정</h1>
-    	<input type="hidden" name="no" value="${sessionScope.loginMemberVo.no}">
-        <input type="text" name="id" placeholder="아이디" readonly value="${sessionScope.loginMemberVo.id}">
+    	<input type="hidden" name="no" value="${sessionScope.loginMemberVo.memberNo}">
+        <input type="text" name="id" placeholder="아이디" readonly value="${sessionScope.loginMemberVo.memberId}">
         <br>
         <input type="password" name="pwd" placeholder="변경할 비밀번호">
         <br>

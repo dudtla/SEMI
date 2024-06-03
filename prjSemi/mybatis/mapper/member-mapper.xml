@@ -11,8 +11,7 @@
 		, MEMBER_ID
 		, PWD
 		, NICK
-		,
-		ADDRESS
+		, ADDRESS
 		, PHONE
 		)
 		VALUES
@@ -47,22 +46,22 @@
 	<update id="edit">
 		UPDATE MEMBER
 		SET PWD = #{pwd}
-		WHERE NO = #{no}
+		WHERE MEMBER_NO = #{memberNo}
 	</update>
 
 	<update id="quit">
 		UPDATE MEMBER
-		SET DEL_YN = 'Y'
-		WHERE NO = #{no}
+		SET DELETE_YN = 'Y'
+		WHERE MEMBER_NO = #{memberNo}
 		AND
-		DEL_YN = 'N'
+		DELETE_YN = 'N'
 	</update>
 
 	<select id="checkIdDup" resultType="int">
 		SELECT COUNT(*) AS CNT
 		FROM
 		MEMBER
-		WHERE ID = #{id}
+		WHERE MEMBER_ID = #{memberId}
 	</select>
 
 	<select id="getMemberList"
@@ -71,7 +70,7 @@
 		MEMBER_NO
 		,MEMBER_ID
 		FROM MEMBER
-		WHERE MEMBER_NO =#{no}
+		WHERE MEMBER_NO =#{memberNo}
 		AND DELETE_YN = 'N'
 	</select>
 
