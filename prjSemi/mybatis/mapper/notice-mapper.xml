@@ -6,26 +6,23 @@
 
 	<insert id="write">
 		INSERT INTO SELLER_NOTI (
-	    NO
-	    , ADMIN_NO
+	     ADMIN_NO
 	    , TITLE
 	    ,CONTENT
 	)VALUES(
-	    SEQ_MEMBER_NOTI_NO.NEXTVAL
-	    , #{adminNo}
+	     #{adminNo}
 	    , #{title}
 	    , #{content}
 	)
 	</insert>
 	
 	<select id="getNoticeList" resultType="com.kh.app.notice.vo.NoticeVo">
-		SELECT NO, TITLE, ENROLL_DATE 
-		FROM 	SELLER_NOTI ORDER BY NO DESC
+		SELECT  ADMIN_NO, TITLE, ENROLL_DATE FROM SELLER_NOTI ORDER BY ENROLL_DATE DESC
 	</select>
 	
 	<select id="getNoticeDetail" resultType="com.kh.app.notice.vo.NoticeVo">
 		SELECT NO, ADMIN_NO, TITLE ,CONTENT, ENROLL_DATE  
-		FROM MEMBER_NOTI WHERE NO = #{no}
+		FROM SELLER_NOTI WHERE NO = #{no}
 	</select>
 	
 
