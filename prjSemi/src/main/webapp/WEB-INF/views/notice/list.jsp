@@ -11,9 +11,9 @@
 <body>
 
 	<main>
-		<h1 align="center">공지사항 목록 조회</h1>
+		<h1>공지사항 목록 조회</h1>
 
-		<table>
+		<table border="1px" >
 			<thead>
 				<tr>
 					<th>작성자 번호</th>
