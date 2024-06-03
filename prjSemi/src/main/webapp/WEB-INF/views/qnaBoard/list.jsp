@@ -13,9 +13,9 @@
 <body>
 
 	<main>
-		<h1 align="center">QnA목록 조회</h1>
+		<h1>QnA목록 조회</h1>
 
-			<table>
+			<table border="1px">
 			<thead>
 				<tr>
 					<th>번호</th>
@@ -31,7 +31,7 @@
 						<td><a href="/app/qna/detail?no=${vo.qnaNo}">${vo.title}</a></td>
 						<td>${vo.enrollDate}</td>
 						<td>${vo.writerNick}</td>
-						<td>
+					
                         
 				</tr>
 			</c:forEach>

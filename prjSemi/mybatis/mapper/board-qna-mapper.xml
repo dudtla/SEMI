@@ -26,7 +26,7 @@
     		Q.DELETE_YN = 'N'
     	AND Q.OPEN_YN = 'Y'
 		ORDER BY 
-    		Q.ENROLL_DATE DESC
+    		Q.QNA_NO DESC
 
 	</select>
 	

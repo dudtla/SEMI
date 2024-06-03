@@ -22,7 +22,7 @@ public class NoticeListController extends HttpServlet {
 			//service
 			NoticeService service = new NoticeService();
 			List<NoticeVo> voList = service.getNoticeList();
-			System.out.println(voList);
+			
 			
 			req.setAttribute("voList", voList);
 			req.getRequestDispatcher("/WEB-INF/views/notice/list.jsp").forward(req, resp);			
