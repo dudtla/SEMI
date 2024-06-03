@@ -25,6 +25,7 @@
                 <div id="slogan">
                     <h3>Taste carefully selected just for you</h3>
                 </div>
+                
                 <div id="ctg">
                     <form>
                         <input type="button" value="furniture" onclick="location.href = '/app/product/main'">
