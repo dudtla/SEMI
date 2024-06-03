@@ -16,6 +16,7 @@
 
 .box_lef{
   border-top: 5px solid #212121;
+  border-bottom: 5px solid #212121;
 }
 
 
@@ -76,7 +77,7 @@
   justify-items: center;
 }
 
-#kakao input[type="button"]{
+button{
   display: grid;
   justify-content: center;
   align-content: center;
@@ -96,7 +97,7 @@
   font-weight: bolder;
 }
 
-#kakao input[type="button"]:hover{
+button:hover{
   background-color: #EFEFEF;
   color: #212121;
 }

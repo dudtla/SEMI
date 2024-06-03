@@ -4,12 +4,12 @@
 
 
 
-
-
 <script>
 	<c:if test="${not empty alertMsg}">
 	alert("${alertMsg}");
 	</c:if>
 </script>
+
+
 
 <c:remove var="alertMsg" scope="session" />

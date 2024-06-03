@@ -83,4 +83,50 @@ footer > #down{
   text-align: center;
 }
 
+#a{
+ border: none;
+  outline: none;
+  margin-bottom: 5%;
+}
+
+input[type="submit"]{
+  background-color: #212121;
+  color: #EFEFEF;
+}
+/*------footer------*/
+
+footer{
+  display: flex;
+  align-content: end;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+#up > p{
+  color: #212121;
+  font-size: small;
+  font-family: 'Bold Italic', sans-serif;
+}
+
+footer > #down{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link a{
+  color: rgb(177, 174, 174);
+  font-size: small;
+}
+
+#down_text {
+  color: rgb(177, 174, 174);
+  
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
 
