@@ -1,18 +1,11 @@
-function putCart(f) {
-  const value = f.item.value + "|" + f.price.value + "|" + f.quantity.value + "|" + f.shipping.value;
-  localStorage.setItem(f.item_key.value, value);
-  alert("상품이 장바구니에 추가되었습니다.");
-}
+ function putCart(form) {
+      const itemKey = form.item_key.value;
+      const itemName = form.item.value;
+      const itemPrice = form.price.value;
+      const itemShipping = form.shipping.value;
+      const itemQuantity = form.quantity.value;
+      const itemData = `${itemName}|${itemPrice}|${itemShipping}|${itemQuantity}`;
 
-
-// 현재 로그인된 사용자의 ID를 반환하는 함수
- function getUserID() {
- return localStorage.getItem('userId');
-}
-
-// 회원별로 고유한 키를 생성하는 함수
-function generateUniqueKey(userId, itemKey) {
- return `${userId}_${itemKey}`;
-}
-
-
+      localStorage.setItem(itemKey, itemData);
+      alert(`${itemName}가 장바구니에 추가되었습니다.`);
+    }
