@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAVIN_MyPage</title>
 <%@ include file="/WEB-INF/views/layout/util.jsp" %>
@@ -16,45 +16,46 @@
 <div class="main">
   <div id="left">
     <div class="view _details">
-      <pre id="name">½É*¿ë</pre>
+      <pre id="name">ì‹¬*ìš©</pre>
       <hr>
       <div id="view_ctg">
-        <h4>³ªÀÇ ¼îÇÎÁ¤º¸</h4>
-		<input type="button" value="È¸¿øÁ¤º¸ ¼öÁ¤" onClick="location.href">
-        <input type="button" value="ÁÖ¹®¹è¼Û Á¶È¸" onClick="location.href">
-        <input type="button" value="»óÇ°¸®ºä" onClick="location.href='http://127.0.0.1:5500/Review/review.html'">
-        <h4>°í°´¼¾ÅÍ</h4>
-        <input type="button" value="1:1 ¹®ÀÇ³»¿ª" onClick="location.href='http://127.0.0.1:5500/oneToone/oneToone.html'">
-        <input type="button" value="»óÇ° Q&A ³»¿ª" onClick="location.href='http://127.0.0.1:5500/QnA/QnA.html'">
-        <input type="button" value="°øÁö»çÇ×"  >
+        <h4>ë‚˜ì˜ ì‡¼í•‘ì •ë³´</h4>
+
+		<input type="button" value="íšŒì›ì •ë³´ ìˆ˜ì •" onclick="location.href = 'http://127.0.0.1:8888/app/member/edit'">
+        <input type="button" value="ì£¼ë¬¸ë°°ì†¡ ì¡°íšŒ" onClick="location.href">
+        <input type="button" value="ìƒí’ˆë¦¬ë·°" onClick="location.href='http://127.0.0.1:5500/Review/review.html'">
+        <h4>ê³ ê°ì„¼í„°</h4>
+        <input type="button" value="1:1 ë¬¸ì˜ë‚´ì—­" onClick="location.href='http://127.0.0.1:5500/oneToone/oneToone.html'">
+        <input type="button" value="ìƒí’ˆ Q&A ë‚´ì—­" onClick="location.href='http://127.0.0.1:5500/QnA/QnA.html'">
+        <input type="button" value="ê³µì§€ì‚¬í•­"  >
       </div>
     </div>
   </div>
 
   <div id="right">
     <div id="up_box">
-      <div><pre>¾ÆÀÌµð</pre><hr>oneDragon</div>
-      <div><pre>È¸¿øµî±Þ</pre><hr>È¸¿øµî±Þ</div>
-      <div><pre>ÃÑ ±¸¸Å ¼ö</pre><hr>3</div>
+      <div><pre>ì•„ì´ë””</pre><hr>oneDragon</div>
+      <div><pre>íšŒì›ë“±ê¸‰</pre><hr>íšŒì›ë“±ê¸‰</div>
+      <div><pre>ì´ êµ¬ë§¤ ìˆ˜</pre><hr>3</div>
     </div>
 
     <div id="down_box">
-      <pre>ÃÖ±Ù ÁÖ¹®</pre>
+      <pre>ìµœê·¼ ì£¼ë¬¸</pre>
       <hr style="border: 3px solid black;">
       
       <table>
         <tr>
-          <th>»óÇ°</th>
-          <th>Á¦¸ñ</th>
-          <th>´äº¯ À¯¹«</th>
-          <th>ÀÛ¼ºÀÏÀÚ</th>
+          <th>ìƒí’ˆ</th>
+          <th>ì œëª©</th>
+          <th>ë‹µë³€ ìœ ë¬´</th>
+          <th>ìž‘ì„±ì¼ìž</th>
         </tr>
 
         <tr>
-          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">»óÇ°</a></td>
-          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">Á¦¸ñ</a></td>
-          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">´äº¯ À¯¹«</a></td>
-          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">ÀÛ¼ºÀÏÀÚ</a></td>
+          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">ìƒí’ˆ</a></td>
+          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">ì œëª©</a></td>
+          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">ë‹µë³€ ìœ ë¬´</a></td>
+          <td><a href="http://127.0.0.1:5500/Mypage/prdHp.html">ìž‘ì„±ì¼ìž</a></td>
         </tr>
       </table>
 
