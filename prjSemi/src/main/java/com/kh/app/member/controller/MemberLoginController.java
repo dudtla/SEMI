@@ -31,8 +31,6 @@ public class MemberLoginController extends HttpServlet {
 			// 세션
 			HttpSession session = req.getSession();
 
-			
-			
 			// 데이터 꺼내기
 			String id = req.getParameter("id");
 			String pwd = req.getParameter("pwd");
@@ -42,17 +40,19 @@ public class MemberLoginController extends HttpServlet {
 			vo.setMemberId(id);
 			vo.setPwd(pwd);
 
-
 			// 복잡한 작업
 			MemberService ms = new MemberService();
 			MemberVo loginMemberVo = ms.login(vo);
+			
+			System.out.println("controller > loginMemberVo : " + loginMemberVo);
 
 			// 결과 (화면 == 문자열 내보내기)
 			if (loginMemberVo != null) {
+				System.out.println("ifffffffffffffff");
 				session.setAttribute("alertMsg", "로그인성공 !!!");
 				session.setAttribute("loginMemberVo", loginMemberVo);
 			} else {
-				
+				System.out.println("elseeeeeeeeeeeeee");
 				session.setAttribute("alertMsg", "로그인 실패 ...");
 			}
 
