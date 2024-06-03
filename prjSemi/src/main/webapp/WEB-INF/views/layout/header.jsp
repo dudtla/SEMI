@@ -8,6 +8,7 @@
       <input type="button" value="My Page" onclick="window.open('http://127.0.0.1:8888/app/mypage')">
       <input type="button" value="Like">
       <input type="button" value="Login" onclick="location.href='http://127.0.0.1:8888/app/member/login'" />
+      <input type="button" value="LogOut" onclick="location.href='http://127.0.0.1:8888/app/member/logout'" />
       <input type="button" value="Cart" onclick="window.open('http://127.0.0.1:8888/app/cart')">
     </div>
   
