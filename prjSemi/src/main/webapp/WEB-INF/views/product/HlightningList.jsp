@@ -47,6 +47,7 @@
             </div>
         </div>
 
+ 
         <table>
             <thead>
                 <tr>
@@ -60,7 +61,7 @@
                 <c:forEach items="${LightningvoList}" var="vo">
                     <tr>
                         <td>${vo.no}</td>
-                        <td><img src="${vo.imageUrl}" alt="${vo.productName}" width="100"></td>
+                        <td><img src="/app/resources/upload/homedecor/${vo.imageUrl}" alt="${vo.productName}" width="100"></td>
                         <td>${vo.productName}</td>
                         <td>${vo.price}</td>
                     </tr>

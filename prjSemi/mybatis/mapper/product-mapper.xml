@@ -6,28 +6,34 @@
 <mapper namespace="ProductMapper">
 
 
-	<select id="lightningImageList" resultType="com.kh.app.product.vo.LightningVo">
+	<select id="lightningImageList"
+		resultType="com.kh.app.product.vo.LightningVo">
 
 		SELECT
-		L.NO
-		,P.PRODUCT_NO
-		,P.BRAND_NO
-		,L.STOCK
-		,L.PRICE
-		,L.EXPO_YN
-		,L.CATEGORY_NO
-		,L.PRODUCT_NAME
-		,I.IMG_NO
-		,I.IMAGE_URL
-		,I.DEL_YN
-		,I.EXPO_YN
-
-
-		FROM PRODUCT P
+		L.NO,
+		P.PRODUCT_NO,
+		P.BRAND_NO,
+		L.STOCK,
+		L.PRICE,
+		L.EXPO_YN,
+		L.CATEGORY_NO,
+		L.PRODUCT_NAME,
+		I.IMG_NO,
+		I.IMAGE_URL,
+		I.DEL_YN,
+		I.EXPO_YN
+		FROM
+		PRODUCT P
 		JOIN LIGHTNING L ON P.PRODUCT_NO = L.PRODUCT_NO
 		JOIN PRODUCT_IMAGE I ON P.PRODUCT_NO = I.PRODUCT_NO
-		ORDER BY NO DESC
-
+		WHERE
+		I.IMG_NO = (
+		SELECT MAX(I2.IMG_NO)
+		FROM PRODUCT_IMAGE I2
+		WHERE I2.PRODUCT_NO = P.PRODUCT_NO
+		)
+		ORDER BY
+		L.NO DESC
 	</select>
 
 
