@@ -28,9 +28,10 @@
   <div class="box">
   <form>
     <input type="hidden" name="item_key" value="a001">
-    <input type="text" name="item" value="[르크루제] 파스텔 머그컵 2pc" readonly>
+   <input type="text" name="item" value="[르크루제] 파스텔 머그컵 2pc" readonly>
     <input type="text" name="price" value="50000원" readonly>
     <input type="text" name="shipping" value="3000원" readonly>
+
     <select name="quantity">
       <option value="1">1</option>
       <option value="2">2</option>

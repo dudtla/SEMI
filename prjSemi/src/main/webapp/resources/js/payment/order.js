@@ -36,38 +36,3 @@ displayOrderSummary();
 
 
 
-//-------------------결제---------------------
-IMP.init("imp82168102");
-
-const button = document.querySelector("button");
-
-const onClickPay = async () => {
-  IMP.request_pay(
-    {
-      pg: "{PG사 코드}.{상점 ID}",
-      pay_method: "card",
-      merchant_uid: `payment-${crypto.randomUUID()}`, // 주문 고유 번호
-      name: "노르웨이 회전 의자",
-      amount: 64900,
-      buyer_email: "gildong@gmail.com",
-      buyer_name: "홍길동",
-      buyer_tel: "010-4242-4242",
-      buyer_addr: "서울특별시 강남구 신사동",
-      buyer_postcode: "01181",
-    },
-    function (response) {
-     const{status, err_msg} = response;
-     if(err_msg){
-      alert(err_msg);
-     }
-     if(status === "paid"){
-      const {imp_uid} = response;
-      verifyPayment(imp_uid);
-     }
-    },
-  );
-};
-
-
-button.addEventListener("click", onClickPay);
-
